@@ -1,99 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5BB8W2X');</script>
-  <!-- End Google Tag Manager -->
-  <link rel="icon" type="image/png" href="/favicon.png"/>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
-  <title>Medhane's Personal Portfolio</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
- 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+        body {
+            min-height: 100vh;
+            background: #111827;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
 
-  
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+        .intro-text {
+            height: 2rem;
+            margin-bottom: 5rem;
+            font-size: 1.25rem;
+            perspective: 1000px;
+        }
 
-  
-  <link href="assets/css/style.css" rel="stylesheet">
+        .intro-text span {
+            display: block;
+            color: #14b8a6;
+            opacity: 0;
+            transform: translateY(10px);
+            animation: fadeInOut 12s infinite;
+        }
 
+        .intro-text span:nth-child(2) { animation-delay: 4s; }
+        .intro-text span:nth-child(3) { animation-delay: 8s; }
 
-  
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169007209-3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        .profile-container {
+            position: relative;
+            perspective: 1000px;
+        }
 
-    gtag('config', 'UA-169007209-3');
-  </script>
+        .profile-image {
+            width: 12rem;
+            height: 12rem;
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.5s ease-in-out;
+        }
 
+        .profile-container:hover .profile-image {
+            transform: rotateY(20deg) rotateX(10deg) scale(1.1) translateZ(50px);
+        }
 
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.3);
+            transition: background 0.3s;
+        }
+
+        .profile-container:hover .overlay {
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .tech-pattern {
+            position: absolute;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='19' fill='none' stroke='%2314b8a6' stroke-width='1'/%3E%3C/svg%3E");
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .profile-container:hover .tech-pattern {
+            opacity: 0.2;
+        }
+
+        .nav-links {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 17rem;
+            height: 16rem;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+        }
+
+        .profile-container:hover .nav-links {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .nav-link {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 9999px;
+            background: transparent;
+            color: white;
+            cursor: pointer;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+
+        .nav-link:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-link:nth-child(1) { top: 0; left: 50%; color: #14b8a6; }
+        .nav-link:nth-child(2) { top: 50%; right: 0; transform: translate(50%, -50%); color: #a855f7; }
+        .nav-link:nth-child(3) { bottom: 0; left: 50%; transform: translate(-50%, 50%); color: #facc15; }
+        .nav-link:nth-child(4) { top: 50%; left: 0; transform: translate(-50%, -50%); color: #14b8a6; }
+
+        .tagline {
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .tagline span:nth-child(1) { color: #14b8a6; }
+        .tagline span:nth-child(3) { color: #a855f7; }
+        .tagline span:nth-child(5) { color: #facc15; }
+
+        .description-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        .description-overlay.active {
+            display: flex;
+        }
+
+        .description-content {
+            max-width: 28rem;
+            text-align: center;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+        }
+
+        @keyframes fadeInOut {
+            0%, 33% { opacity: 1; transform: translateY(0); }
+            34%, 100% { opacity: 0; transform: translateY(10px); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @media (max-width: 640px) {
+            .profile-image {
+                width: 10rem;
+                height: 10rem;
+            }
+            
+            .nav-links {
+                width: 14rem;
+                height: 14rem;
+            }
+        }
+        .social-links {
+            margin-top: 2rem;
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .social-link {
+            color: white;
+            font-size: 1.5rem;
+            transition: transform 0.3s, color 0.3s;
+            text-decoration: none;
+        }
+
+        .social-link:hover {
+            transform: translateY(-3px);
+        }
+
+        .social-link.linkedin:hover {
+            color: #0077b5;
+        }
+
+        .social-link.github:hover {
+            color: #6e5494;
+        }
+
+        .social-link.email:hover {
+            color: #14b8a6;
+        }
+
+        .social-link.cv:hover {
+            color: #facc15;
+        }
+
+    </style>
 </head>
-
 <body>
-  
-  
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BB8W2X"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  
-  <header id="header" class="header-tops align-content-md-between">
-
-    <div class="container" >
-
-
-      <img src="https://lh4.googleusercontent.com/rXJ9hN1Im0HnDav0Ahj7rsvDEQTA86EujC6SD8z9kg_UdlWjV3mInch1y5KjCjsOq3E=w2400" alt="" id="image">
-      <h1><a href="index.html">Medhane Hadush</a></h1>
-      <h2 style="color:#fff">I'm <span class="typing" style="color:#12D640"></span></h2>
-
-
-      <div class="social-links">
-          <a href="https://www.linkedin.com/in/medhane-hadush" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://www.github.com/medahad" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-          <a href="mailto:rioticcoder@gmail.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-          <a href="https://www.google.com" target="_blank"><i class="bx bx-book"></i></a>
-        
-      </div>
-
+    <div class="intro-text">
+        <span>Building Digital Solutions</span>
+        <span>Securing Tomorrow's Tech</span>
+        <span>Exploring AI Frontiers</span>
     </div>
-  </header>
-  
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  
-  <script type="text/javascript">
-    var typed = new Typed('.typing',{
-      strings: ["Web and Mobile App Developer!", "Cyber Security Analyst!", "AI Enthusiast"],
-      loop: true,
-      typeSpeed: 65,
-      backSpeed: 65
-    });
-  </script>
-  <script src="assets/js/main.js"></script>
 
+    <div class="profile-container">
+        <div class="profile-image">
+            <img src="https://lh4.googleusercontent.com/rXJ9hN1Im0HnDav0Ahj7rsvDEQTA86EujC6SD8z9kg_UdlWjV3mInch1y5KjCjsOq3E=w2400" alt="Profile">
+            <div class="overlay"></div>
+            <div class="tech-pattern"></div>
+        </div>
+
+        <div class="nav-links">
+            <button class="nav-link" onclick="showDescription('about')">About</button>
+            <button class="nav-link" onclick="showDescription('skills')">Skills</button>
+            <button class="nav-link" onclick="showDescription('portfolio')">Portfolio</button>
+            <button class="nav-link" onclick="showDescription('contact')">Contact</button>
+        </div>
+    </div>
+
+    <div class="tagline">
+        <span>Cybersecurity Analyst</span>
+        <span>&nbsp;|&nbsp;</span>
+        <span>Web Developer</span>
+        <span>&nbsp;|&nbsp;</span>
+        <span>AI Enthusiast</span>
+    </div>
+
+
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/medhane-hadush/" class="social-link linkedin" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/medahad" class="social-link github" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:medhanehd@gmail.com" class="social-link email">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="/path-to-your-cv.pdf" class="social-link cv" target="_blank">
+            <i class="fas fa-file-alt"></i>
+        </a>
+    </div>
+
+    <div id="description" class="description-overlay" onclick="hideDescription()">
+        <div class="description-content"></div>
+    </div>
+
+    <script>
+        const descriptions = {
+            about: "Passionate technologist with 5+ years of experience in cybersecurity and web development. Committed to building secure, innovative solutions.",
+            skills: "Expert in penetration testing, full-stack development, and machine learning. Proficient with Python, React, and cloud security.",
+            portfolio: "Led security audits for Fortune 500 companies. Developed AI-powered threat detection systems. Created responsive web applications.",
+            contact: "Let's connect! Available for consulting and collaboration on innovative projects."
+        };
+
+        function showDescription(type) {
+            const overlay = document.getElementById('description');
+            const content = overlay.querySelector('.description-content');
+            content.textContent = descriptions[type];
+            overlay.classList.add('active');
+            setTimeout(() => hideDescription(), 20000);
+        }
+
+        function hideDescription() {
+            const overlay = document.getElementById('description');
+            overlay.classList.remove('active');
+        }
+    </script>
 </body>
-
 </html>
