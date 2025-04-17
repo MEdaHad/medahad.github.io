@@ -1,2 +1,0 @@
-This is a placeholder file to ensure the directory structure exists.
-A resume PDF would go here in a production environment. 
