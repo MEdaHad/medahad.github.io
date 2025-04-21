@@ -6,158 +6,212 @@
     <title>Medhane Hadush - Cyber Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        body {
-            background-color: #0e0e0e;
-            color: #00ffcc;
-            font-family: 'Courier New', Courier, monospace;
+        /* Global resets and background */
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
             margin: 0;
             padding: 0;
+            height: 100%;
         }
+        body {
+            background: linear-gradient(135deg, #0e0e0e, #1a1a1a);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            color: #00ffcc;
+            font-family: 'Courier New', Courier, monospace;
+            overflow-y: auto;
+        }
+        /* Container to center all content horizontally */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            padding: 20px;
+        }
+        /* Header styling with neon glow */
         header {
             text-align: center;
             padding: 50px 0;
             border-bottom: 2px solid #00ffcc;
+            width: 100%;
         }
         h1 {
             font-size: 3em;
             margin: 0;
+            animation: neonGlow 1.5s ease-in-out infinite alternate;
         }
         h2 {
             font-size: 2em;
             margin: 10px 0;
         }
+        @keyframes neonGlow {
+            from {
+                text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+            }
+            to {
+                text-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc, 0 0 40px #00ffcc;
+            }
+        }
+        /* Section styles with modern box shadows & rounded borders */
         section {
             padding: 20px;
-            margin: 20px;
+            margin: 20px 0;
             border: 1px solid #00ffcc;
             border-radius: 10px;
             background-color: #1a1a1a;
+            box-shadow: 0 4px 15px rgba(0, 255, 204, 0.2);
+            transition: transform 0.3s ease;
+        }
+        section:hover {
+            transform: scale(1.02);
         }
         a {
             color: #00ffcc;
             text-decoration: none;
+            transition: text-shadow 0.3s ease;
         }
         a:hover {
-            text-decoration: underline;
+            text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc;
         }
         .skills, .languages, .employment, .education {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: space-around;
         }
         .skill, .language, .job, .edu {
             flex: 1 1 45%;
             margin: 10px;
+            padding: 10px;
+            border: 1px solid #00ffcc;
+            border-radius: 5px;
+            background-color: #0e0e0e;
+            box-shadow: 0 2px 10px rgba(0, 255, 204, 0.1);
+            transition: background-color 0.3s ease;
+        }
+        .skill:hover, .language:hover, .job:hover, .edu:hover {
+            background-color: #262626;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px 0;
+            border-top: 2px solid #00ffcc;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Medhane Hadush</h1>
-    <h2>Cybersecurity Analyst & Web Developer</h2>
-    <p>Lausanne, Switzerland | +41 78 238 61 00 | <a href="mailto:medhane.hadush@powercoders.org">medhane.hadush@powercoders.org</a></p>
-</header>
+<div class="container">
+    <header>
+        <h1>Medhane Hadush</h1>
+        <h2>Cybersecurity Analyst & Web Developer</h2>
+        <p>Lausanne, Switzerland | +41 78 238 61 00 | <a href="mailto:medhane.hadush@powercoders.org">medhane.hadush@powercoders.org</a></p>
+    </header>
 
-<section>
-    <h2>Links</h2>
-    <p>
-        <a href="https://github.com/medahad" target="_blank">Github</a> | 
-        <a href="https://www.linkedin.com/in/medhane-hadush" target="_blank">LinkedIn</a> | 
-        <a href="https://tryhackme.com/p/shifta" target="_blank">TryHackMe (Top 3%)</a>
-    </p>
-</section>
+    <section>
+        <h2>Links</h2>
+        <p>
+            <a href="https://github.com/medahad" target="_blank">Github</a> | 
+            <a href="https://www.linkedin.com/in/medhane-hadush" target="_blank">LinkedIn</a> | 
+            <a href="https://tryhackme.com/p/shifta" target="_blank">TryHackMe (Top 3%)</a>
+        </p>
+    </section>
 
-<section>
-    <h2>Skills</h2>
-    <div class="skills">
-        <div class="skill">Highly organized and efficient</div>
-        <div class="skill">Network Administration</div>
-        <div class="skill">Incident Troubleshooting</div>
-        <div class="skill">Critical thinking and problem solving</div>
-        <div class="skill">Software Development (JavaScript, React, Python, Django)</div>
-        <div class="skill">Collaborative Teamwork and Self-Management</div>
-        <div class="skill">Cloud Computing (Azure Cloud, AWS)</div>
-        <div class="skill">Incident Response</div>
-        <div class="skill">SIEM Tools: Splunk, IBM QRadar</div>
-    </div>
-</section>
-
-<section>
-    <h2>Languages</h2>
-    <div class="languages">
-        <div class="language">English</div>
-        <div class="language">French</div>
-    </div>
-</section>
-
-<section>
-    <h2>Profile</h2>
-    <p>A Cybersecurity Analyst and Web Developer with over 5 years of expertise in threat detection, incident response, and web development. Experienced in JavaScript, React, Django, Java, Python, and AWS. Demonstrated ability to enhance security measures and develop robust web applications. Passionate about continuous learning and staying updated with industry trends through active participation in conferences, CTFs, and open-source projects. Known for a proactive approach, strong problem-solving skills, and effective collaboration.</p>
-</section>
-
-<section>
-    <h2>Employment History</h2>
-    <div class="employment">
-        <div class="job">
-            <h3>Technical Security Coordinator - Contract</h3>
-            <p>Banque Cantonale Vaudoise (BCV), Lausanne</p>
-            <p>AUGUST 2024 — DECEMBER 2024</p>
-            <ul>
-                <li>Enhanced the bank's Host Intrusion Prevention System (HIPS) methodology.</li>
-                <li>Managing customer-related fraud incidents.</li>
-                <li>Developing and implementing the RIO incident response methodology.</li>
-                <li>Secured employee devices targeted by brute force attacks.</li>
-            </ul>
+    <section>
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">Highly organized and efficient</div>
+            <div class="skill">Network Administration</div>
+            <div class="skill">Incident Troubleshooting</div>
+            <div class="skill">Critical thinking and problem solving</div>
+            <div class="skill">Software Development (JavaScript, React, Python, Django)</div>
+            <div class="skill">Collaborative Teamwork and Self-Management</div>
+            <div class="skill">Cloud Computing (Azure Cloud, AWS)</div>
+            <div class="skill">Incident Response</div>
+            <div class="skill">SIEM Tools: Splunk, IBM QRadar</div>
         </div>
-        <div class="job">
-            <h3>Cybersecurity Engineer - Intern</h3>
-            <p>Banque Cantonale Vaudoise (BCV), Lausanne</p>
-            <p>AUGUST 2023 — JULY 2024</p>
-            <ul>
-                <li>Enhanced threat detection capabilities by tuning SIEM detection use cases.</li>
-                <li>Proposed and implemented an improved Incident Response Methodology.</li>
-                <li>Integrated MITRE ATT&CK framework techniques into Cybersecurity strategies.</li>
-                <li>Actively managed fraudulent activities related to the bank's customers.</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3>Cybersecurity Analyst</h3>
-            <p>Information Network Security Agency (INSA), Addis Ababa</p>
-            <p>JANUARY 2018 — SEPTEMBER 2020</p>
-            <ul>
-                <li>Developed engaging Cybersecurity training modules.</li>
-                <li>Designed and implemented a secure Flask-based web platform.</li>
-                <li>Utilized TensorFlow for automating cryptanalysis.</li>
-            </ul>
-        </div>
-    </div>
-</section>
+    </section>
 
-<section>
-    <h2>Education</h2>
-    <div class="education">
-        <div class="edu">
-            <h3>MicroLink IT College</h3>
-            <p>BSc in Software Engineering</p>
-            <p>SEPTEMBER 2013 — AUGUST 2017</p>
+    <section>
+        <h2>Languages</h2>
+        <div class="languages">
+            <div class="language">English</div>
+            <div class="language">French</div>
         </div>
-        <div class="edu">
-            <h3>Cyber Security Certification</h3>
-            <p>Ariel University</p>
-            <p>APRIL 2018 — OCTOBER 2018</p>
-        </div>
-        <div class="edu">
-            <h3>Powercoders Bootcamp</h3>
-            <p>Powercoders, Bern</p>
-            <p>MARCH 2023 — JUNE 2023</p>
-        </div>
-    </div>
-</section>
+    </section>
 
-<footer>
-    <p>Download my CV: <a href="MedaHad_CV.pdf" target="_blank">MedaHad_CV.pdf</a></p>
-</footer>
+    <section>
+        <h2>Profile</h2>
+        <p>A Cybersecurity Analyst and Web Developer with over 5 years of expertise in threat detection, incident response, and web development. Experienced in JavaScript, React, Django, Java, Python, and AWS. Demonstrated ability to enhance security measures and develop robust web applications. Passionate about continuous learning and staying updated with industry trends through active participation in conferences, CTFs, and open-source projects. Known for a proactive approach, strong problem-solving skills, and effective collaboration.</p>
+    </section>
+
+    <section>
+        <h2>Employment History</h2>
+        <div class="employment">
+            <div class="job">
+                <h3>Technical Security Coordinator - Contract</h3>
+                <p>Banque Cantonale Vaudoise (BCV), Lausanne</p>
+                <p>AUGUST 2024 — DECEMBER 2024</p>
+                <ul>
+                    <li>Enhanced the bank's Host Intrusion Prevention System (HIPS) methodology.</li>
+                    <li>Managing customer-related fraud incidents.</li>
+                    <li>Developing and implementing the RIO incident response methodology.</li>
+                    <li>Secured employee devices targeted by brute force attacks.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Cybersecurity Engineer - Intern</h3>
+                <p>Banque Cantonale Vaudoise (BCV), Lausanne</p>
+                <p>AUGUST 2023 — JULY 2024</p>
+                <ul>
+                    <li>Enhanced threat detection capabilities by tuning SIEM detection use cases.</li>
+                    <li>Proposed and implemented an improved Incident Response Methodology.</li>
+                    <li>Integrated MITRE ATT&CK framework techniques into Cybersecurity strategies.</li>
+                    <li>Actively managed fraudulent activities related to the bank's customers.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Cybersecurity Analyst</h3>
+                <p>Information Network Security Agency (INSA), Addis Ababa</p>
+                <p>JANUARY 2018 — SEPTEMBER 2020</p>
+                <ul>
+                    <li>Developed engaging Cybersecurity training modules.</li>
+                    <li>Designed and implemented a secure Flask-based web platform.</li>
+                    <li>Utilized TensorFlow for automating cryptanalysis.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="education">
+            <div class="edu">
+                <h3>MicroLink IT College</h3>
+                <p>BSc in Software Engineering</p>
+                <p>SEPTEMBER 2013 — AUGUST 2017</p>
+            </div>
+            <div class="edu">
+                <h3>Cyber Security Certification</h3>
+                <p>Ariel University</p>
+                <p>APRIL 2018 — OCTOBER 2018</p>
+            </div>
+            <div class="edu">
+                <h3>Powercoders Bootcamp</h3>
+                <p>Powercoders, Bern</p>
+                <p>MARCH 2023 — JUNE 2023</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Download my CV: <a href="MedaHad_CV.pdf" target="_blank">MedaHad_CV.pdf</a></p>
+    </footer>
+</div>
 
 </body>
 </html>
