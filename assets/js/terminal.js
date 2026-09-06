@@ -23,7 +23,7 @@
     body.scrollTop = body.scrollHeight;
     return el;
   };
-  const echo = (cmd) => line(`<span class="prompt">medhane@lausanne</span> <span class="path">~</span> $ ${esc(cmd)}`, 'cmd');
+  const echo = (cmd) => line(`<span class="prompt">medhane@hadush</span> <span class="path">~</span> $ ${esc(cmd)}`, 'cmd');
   const lines = async (arr, delay = 28) => { for (const l of arr) { if (Array.isArray(l)) line(l[0], l[1]); else line(l); await sleep(delay); } };
   const bar = (pct, w = 120) => `<span class="bar" style="width:${Math.round(w * pct / 100)}px"></span>`;
   const link = (href, text, ext = false) => `<a href="${href}"${ext ? ' target="_blank" rel="noopener"' : ''}>${text}</a>`;
@@ -38,7 +38,7 @@
       'research, judge-model evaluation pipelines and training infrastructure mapped to the',
       'OWASP LLM Top 10. Experience inside a national security agency (INSA, Ethiopia) and a',
       'FINMA-regulated bank (BCV). Keynote speaker, Swiss Cyber AI Conference 2026 (Lugano).',
-      'Off the clock: game mods as RioticGamer (PedTalk AI, 4,400+ downloads).',
+      'Off the clock: voice-AI and computer-vision side projects as RioticGamer (PedTalk AI, 29.9k+ views).',
       '',
       ['tip: try <b>skills</b>, <b>experience</b>, <b>agents</b> or <b>scan</b>', 'muted']
     ],
@@ -102,21 +102,12 @@
       [`demo → ${link('#ai-security', '#ai-security')}`, 'muted']
     ],
     mods: [
-      ['RioticGamer — game modding', 'head'],
-      `  PedTalk AI               GTA V · LSPDFR   voice-driven AI NPC dialogue     4,454+ downloads ${link('https://www.lcpdfr.com/downloads/gta5mods/scripts/54809-pedtalk-ai-v10-community-edition/', '[lcpdfr]', true)}`,
-      '  Advanced K9 Tactics      GTA V · LSPDFR   realistic K9 partner             900+ downloads',
-      '  PedTalk Callouts         GTA V · LSPDFR   callouts on the PedTalk context API',
-      '  PedTalk PULSE MDT        GTA V · LSPDFR   offline-first records layer',
-      '  Riotic Key Manager       GTA V · tool     resolves keybinding conflicts safely',
-      '  GTA V Animation Lab      GTA V · tool     local-first animation catalog',
-      '  Riotic Livery Studio     GTA V · tool     repaint & package vehicle mods',
-      '  SCS Skin Studio          ETS2 · ATS       paint-job mod studio (Rust · Tauri)',
-      '  Riotic Vehicle Studio    ETS2 · ATS       build · paint · convert vehicles',
-      '  Halogen                  ETS2 · ATS       declarative graphics/weather builds',
-      '  RoadMate                 ETS2 · ATS       telemetry + voice companion',
-      '  EYVRO                    sim racing       webcam head tracking → OpenTrack',
+      ['RioticGamer — side projects', 'head'],
+      `  PedTalk AI   voice-driven, context-aware NPC conversations (Gemini · spatial audio)   29.9k+ views ${link('https://www.lcpdfr.com/downloads/gta5mods/scripts/54809-pedtalk-ai-v10-community-edition/', '[release page]', true)}`,
+      '  EYVRO        native Windows webcam head tracking → OpenTrack                        1.0 release candidate',
+      '  Halogen      declarative graphics / lighting / weather build system                in development',
       ['', ''],
-      [`${link('https://www.patreon.com/c/RioticGamer', 'patreon', true)} · ${link('https://discord.gg/EQBp44AvH', 'discord', true)} · ${link('#modding', '#modding')}`, 'muted']
+      [`details → ${link('#modding', '#modding')}`, 'muted']
     ],
     talks: [
       ['Speaking & teaching', 'head'],
@@ -141,7 +132,7 @@
       ['available commands', 'head'],
       '  whoami        profile summary          skills        stack, grouped',
       '  experience    roles & impact           projects      what I\'ve shipped',
-      '  agents        agentic-AI work          mods          game modding (RioticGamer)',
+      '  agents        agentic-AI work          mods          side projects (RioticGamer)',
       '  scan          OWASP LLM Top 10 demo    talks         speaking & education',
       '  contact       how to reach me          cv            open the PDF',
       '  theme         dark | light             open <id>     jump to a section',
@@ -194,8 +185,8 @@
       '   ╚═╝     ╚═╝╚═╝  ╚═╝ '
     ];
     const info = [
-      '<b>medhane</b>@<b>lausanne</b>', '─────────────────', 'OS: Linux 5+ yrs · Windows (modding)', 'Role: AI/LLM security engineer',
-      'Shell: zsh · Editor: whatever ships fastest', 'Focus: OWASP LLM Top 10 · agentic AI', `Theme: ${t} · Uptime: since 2018`, 'Mods: PedTalk AI (4,454+ dl)'
+      '<b>medhane</b>@<b>hadush</b>', '─────────────────', 'OS: Linux 5+ yrs · Windows (desktop tooling)', 'Role: AI/LLM security engineer',
+      'Shell: zsh · Editor: whatever ships fastest', 'Focus: OWASP LLM Top 10 · agentic AI', `Theme: ${t} · Uptime: since 2018`, 'Side project: PedTalk AI (voice AI in-game)'
     ];
     for (let i = 0; i < Math.max(art.length, info.length); i++) line(`<span style="color:var(--cyan)">${esc(art[i] || ' '.repeat(23))}</span>  ${info[i] || ''}`);
   };
@@ -226,7 +217,7 @@
     ls: () => line(Object.keys(FILES).map((f) => (f.endsWith('.env') ? `<span style="color:var(--rose)">${f}</span>` : f)).join('   ')),
     cat: (args) => { const f = args[0]; if (!f) line('usage: cat <file>', 'warn'); else if (FILES[f]) return lines(FILES[f], 10); else line(`cat: ${esc(f)}: no such file`, 'err'); },
     pwd: () => line('/home/medhane'),
-    uname: () => line('Linux lausanne 6.9.0-security #1 SMP x86_64 GNU/Linux'),
+    uname: () => line('Linux hadush 6.9.0-security #1 SMP x86_64 GNU/Linux'),
     date: () => line(new Date().toString()),
     echo: (args) => line(esc(args.join(' '))),
     history: () => history.forEach((h, i) => line(`  ${String(i + 1).padStart(3, ' ')}  ${esc(h)}`)),

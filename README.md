@@ -1,6 +1,6 @@
 # medahad.github.io
 
-Personal portfolio of **Medhane Hadush** — AI/LLM security, cybersecurity engineering, agentic AI, and game modding (RioticGamer).
+Personal portfolio of **Medhane Hadush** — AI/LLM security, cybersecurity engineering, agentic AI, and side projects (RioticGamer).
 
 Live: https://medahad.github.io/
 

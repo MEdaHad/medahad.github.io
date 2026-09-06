@@ -342,18 +342,6 @@
     new IntersectionObserver((en) => { visible = en[0].isIntersecting; clearTimeout(t); if (visible) tickFleet(); }, { threshold: 0.3 }).observe(fleetStage);
   }
 
-  /* ---------- Mod filters ---------- */
-  const modFilters = $('#mod-filters');
-  if (modFilters) {
-    const cards = $$('#mods-grid .mod-card');
-    modFilters.addEventListener('click', (e) => {
-      const btn = e.target.closest('.filter-btn'); if (!btn) return;
-      $$('.filter-btn', modFilters).forEach((b) => b.classList.toggle('active', b === btn));
-      const f = btn.dataset.filter;
-      cards.forEach((c) => c.classList.toggle('hide', f !== 'all' && !c.dataset.cat.split(' ').includes(f)));
-    });
-  }
-
   /* ---------- Copy-to-clipboard ---------- */
   $$('[data-copy]').forEach((b) => b.addEventListener('click', async (e) => {
     e.preventDefault(); e.stopPropagation();
@@ -411,7 +399,7 @@
   const clock = $('#term-clock');
   if (clock) {
     const tickClock = () => {
-      try { clock.textContent = 'Lausanne ' + new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Zurich' }); }
+      try { clock.textContent = 'CH ' + new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Zurich' }); }
       catch (e) { clock.textContent = new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' }); }
     };
     tickClock(); setInterval(tickClock, 15000);

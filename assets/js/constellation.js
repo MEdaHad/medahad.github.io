@@ -20,7 +20,7 @@
     agents: { label: 'Agentic AI & engineering', v: '--violet', rgb: '--violet-rgb' },
     detect: { label: 'Detection & response', v: '--green', rgb: '--green-rgb' },
     gov: { label: 'Governance & infra', v: '--amber', rgb: '--amber-rgb' },
-    mod: { label: 'Game modding', v: '--rose', rgb: '--rose-rgb' }
+    mod: { label: 'Systems & desktop', v: '--rose', rgb: '--rose-rgb' }
   };
   const SKILLS = [
     ['ai', 'Prompt injection', 'attack & defense patterns'], ['ai', 'Jailbreak research', 'adversarial prompting'], ['ai', 'Judge models', 'cascaded evaluation'],
@@ -35,8 +35,8 @@
     ['gov', 'FINMA', 'regulated banking'], ['gov', 'GDPR', 'privacy by design'], ['gov', 'NIST CSF', 'framework'],
     ['gov', 'OWASP Top 10', 'web'], ['gov', 'RBAC', 'multi-role'], ['gov', 'Session security', 'auth flows'],
     ['gov', 'Docker', 'containers'], ['gov', 'PostgreSQL', 'data'],
-    ['mod', 'C# · RAGE Hook', 'GTA V plugins'], ['mod', 'Rust · Tauri', 'desktop tools'], ['mod', '.NET 8', 'services'],
-    ['mod', 'C++ telemetry', 'SCS plugins'], ['mod', 'React', 'tool UIs'], ['mod', 'Gemini NPC dialogue', 'PedTalk AI'], ['mod', 'Asset packaging', 'OpenIV · SCS']
+    ['mod', 'C# · .NET', 'runtime plugins & services'], ['mod', 'Rust · Tauri', 'desktop apps'], ['mod', 'C++', 'telemetry & native plugins'],
+    ['mod', 'React', 'tool UIs'], ['mod', 'Real-time voice AI', 'STT · LLM · TTS'], ['mod', 'Computer vision', 'webcam head tracking'], ['mod', 'Build pipelines', 'declarative presets · packaging']
   ];
 
   /* ---- geometry ---- */
