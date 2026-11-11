@@ -1,38 +1,33 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Medhane Hadush — AI/LLM Security & Cybersecurity Engineer</title>
-  <meta name="description" content="Medhane Hadush is an AI/LLM security and cybersecurity engineer in Lausanne, Switzerland: adversarial attack-pattern research, judge-model evaluation pipelines, agentic AI systems, detection and incident response. Keynote speaker at the Swiss Cyber AI Conference 2026. Builds voice-AI and computer-vision side projects as RioticGamer.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Medhane Hadush — AI/LLM Security &amp; Cybersecurity Engineer</title>
+  <meta name="description" content="Medhane Hadush is an AI/LLM security and cybersecurity engineer in Lausanne, Switzerland: adversarial attack-pattern research, judge-model evaluation pipelines, agentic AI systems, detection and incident response.">
   <meta name="author" content="Medhane Hadush">
-  <meta name="theme-color" content="#05070d" media="(prefers-color-scheme: dark)">
-  <meta name="theme-color" content="#f3f6fb" media="(prefers-color-scheme: light)">
+  <meta name="color-scheme" content="dark">
   <link rel="canonical" href="https://medahad.github.io/">
+  <meta name="theme-color" content="#0c0f0d">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://medahad.github.io/">
-  <meta property="og:title" content="Medhane Hadush — AI/LLM Security & Cybersecurity Engineer">
-  <meta property="og:description" content="AI/LLM security, agentic AI engineering, detection & incident response. Lausanne, Switzerland.">
+  <meta property="og:site_name" content="Medhane Hadush">
+  <meta property="og:title" content="Medhane Hadush — AI/LLM Security &amp; Cybersecurity Engineer">
+  <meta property="og:description" content="AI/LLM security, agentic AI engineering, detection &amp; incident response. Lausanne, Switzerland.">
   <meta property="og:image" content="https://medahad.github.io/assets/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Portrait of Medhane Hadush">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Medhane Hadush — AI/LLM Security & Cybersecurity Engineer">
-  <meta name="twitter:description" content="AI/LLM security, agentic AI engineering, detection & incident response. Lausanne, Switzerland.">
+  <meta name="twitter:title" content="Medhane Hadush — AI/LLM Security &amp; Cybersecurity Engineer">
+  <meta name="twitter:description" content="AI/LLM security, agentic AI engineering, detection &amp; incident response. Lausanne, Switzerland.">
   <meta name="twitter:image" content="https://medahad.github.io/assets/img/og.jpg">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1220'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-weight='700' font-size='30' fill='%2322d3ee'%3EMH%3C/text%3E%3C/svg%3E">
-  <script>
-    (function () {
-      try {
-        var saved = localStorage.getItem('theme');
-        var theme = saved || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
-        document.documentElement.setAttribute('data-theme', theme);
-      } catch (e) {}
-    })();
-  </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="assets/img/medhane.webp">
-  <link rel="stylesheet" href="assets/css/style.css?v=2026.09.1">
+  <meta name="twitter:image:alt" content="Portrait of Medhane Hadush">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -49,641 +44,388 @@
   </script>
 </head>
 <body>
-  <!-- Boot loader -->
-  <div class="boot" id="boot" aria-hidden="true">
-    <div class="boot-inner">
-      <div class="line"><span class="ok">✓</span> loading profile <span class="mono">medhane.hadush</span></div>
-      <div class="line"><span class="ok">✓</span> mounting /skills /experience /mods</div>
-      <div class="line"><span class="ok">✓</span> arming guardrails · owasp-llm-top10</div>
-      <div class="line">launching interface…<div class="boot-bar"><i></i></div></div>
-    </div>
-  </div>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <div class="bg-layer" aria-hidden="true"></div>
-  <div class="bg-grid" aria-hidden="true"></div>
-  <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
-  <div class="progress-bar" id="progress" aria-hidden="true"></div>
+  <div class="term">
+    <header class="bar">
+      <p>meda@hadush: ~</p>
+    </header>
 
-  <!-- Navigation -->
-  <header class="nav" id="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="#top" aria-label="Medhane Hadush — home">
-        <span class="brand-mark">MH</span>
-        <span>medhane<span class="accent">@</span>hadush<span class="brand-cursor" aria-hidden="true"></span></span>
-      </a>
-      <nav aria-label="Primary">
-        <ul class="nav-links" id="nav-links">
-          <li><a href="#terminal">Terminal</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#ai-security">AI Security</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#modding">Side projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+    <main id="main">
+      <!-- whoami -->
+      <section class="block" id="terminal" aria-labelledby="name">
+        <p class="cmd"><span class="ps1" aria-hidden="true">meda@hadush:~$</span> whoami</p>
+        <div class="out whoami">
+          <picture class="photo">
+            <source type="image/webp" srcset="assets/img/medhane-240.webp 240w, assets/img/medhane-480.webp 480w" sizes="5rem">
+            <img src="assets/img/medhane-240.jpg" srcset="assets/img/medhane-240.jpg 240w, assets/img/medhane-480.jpg 480w" sizes="5rem" width="240" height="240" alt="Portrait of Medhane Hadush">
+          </picture>
+          <div>
+            <h1 id="name">Medhane Hadush</h1>
+            <p>AI/LLM security &amp; cybersecurity engineer</p>
+            <p class="muted">Lausanne, Switzerland · building QbitDojo</p>
+          </div>
+        </div>
+        <div class="out">
+          <p>Cybersecurity engineer with hands-on depth in AI/LLM security: adversarial attack-pattern research, judge-model evaluation pipelines and training infrastructure mapped to the OWASP LLM Top&nbsp;10. Five-plus years across a national security agency, a FINMA-regulated Swiss bank and independent agentic-AI engineering. Off the clock I build voice-AI and computer-vision side projects as RioticGamer.</p>
+          <dl class="kv">
+            <div><dt>years in security</dt><dd>5+</dd></div>
+            <div><dt>AI attack/defense labs shipped</dt><dd>385</dd></div>
+            <div><dt>OWASP LLM Top 10 categories covered</dt><dd>10/10</dd></div>
+          </dl>
+          <p class="links"><a href="MedhaneHadush_CV.pdf">Download CV (PDF)</a> <a href="#contact">Get in touch</a></p>
+        </div>
+      </section>
+
+
+      <!-- Highlights -->
+      <section class="block" id="highlights" aria-labelledby="highlights-h">
+        <h2 class="cmd" id="highlights-h"><span class="ps1" aria-hidden="true">meda@hadush:~$</span> cat highlights.txt</h2>
+        <ul class="out list">
+          <li>AI automation videos — trending content with millions of views</li>
+          <li>PedTalk AI (GTA V mod) — brought AI into GTA V and made NPC interactions look very realistic; it went viral and is still used by thousands of players globally. <a href="https://www.lcpdfr.com/downloads/gta5mods/scripts/54809-pedtalk-ai-v10-community-edition/" rel="noopener">Release page</a></li>
+        </ul>
+      </section>
+
+      <!-- ls ~ -->
+      <nav class="block" aria-label="Sections">
+        <p class="cmd"><span class="ps1" aria-hidden="true">meda@hadush:~$</span> ls ~</p>
+        <ul class="ls out">
+          <li><a href="#highlights">highlights.txt</a></li>
+          <li><a href="#about">about.txt</a></li>
+          <li><a href="#currently">currently.txt</a></li>
+          <li><a href="#skills">skills.md</a></li>
+          <li><a href="#experience">experience.md</a></li>
+          <li><a href="#projects">projects/</a></li>
+          <li><a href="#side-projects">side-projects/</a></li>
+          <li><a href="#talks">talks.txt</a></li>
+          <li><a href="#education">education.txt</a></li>
+          <li><a href="#languages">languages.txt</a></li>
+          <li><a href="#contact">contact</a></li>
+          <li><a href="MedhaneHadush_CV.pdf">MedhaneHadush_CV.pdf</a></li>
         </ul>
       </nav>
-      <div class="nav-actions">
-        <a class="icon-btn" href="MedhaneHadush_CV.pdf" target="_blank" rel="noopener" aria-label="Download CV (PDF)" title="Download CV">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 19h16"/></svg>
-        </a>
-        <button class="icon-btn theme-toggle" id="theme-toggle" aria-label="Toggle dark / light theme" title="Toggle theme">
-          <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
-          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-        </button>
-        <button class="icon-btn nav-burger" id="nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
-      </div>
-    </div>
-  </header>
 
-  <main id="top">
-    <!-- ================= HERO ================= -->
-    <section class="hero" id="hero">
-      <canvas id="hero-canvas" aria-hidden="true"></canvas>
-      <div class="container">
-        <div class="hero-inner">
-          <div class="hero-copy">
-            <span class="eyebrow reveal"><span class="dot"></span> Lausanne, Switzerland · building QbitDojo</span>
-            <h1 class="hero-title reveal" data-delay="1">
-              <span class="glitch" data-text="Medhane Hadush">Medhane Hadush</span>
-              <span class="line-2">AI security, engineered.</span>
-            </h1>
-            <div class="hero-role reveal" data-delay="2" aria-live="polite">
-              <span class="prompt">$</span><span>role --current</span>
-              <span id="typewriter"></span><span class="caret" aria-hidden="true"></span>
-            </div>
-            <p class="hero-intro reveal" data-delay="2">
-              Cybersecurity engineer with hands-on depth in <strong>AI/LLM security</strong>: adversarial attack-pattern research, judge-model evaluation pipelines and training infrastructure mapped to the OWASP LLM Top 10. Five-plus years across a national security agency, a FINMA-regulated Swiss bank and independent <strong>agentic-AI</strong> engineering. Off the clock I build voice-AI and computer-vision side projects as RioticGamer.
-            </p>
-            <div class="hero-actions reveal" data-delay="3">
-              <a class="btn btn-primary" href="#terminal" id="launch-terminal">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 7 5 5-5 5"/><path d="M12 19h7"/></svg>
-                Launch terminal
-              </a>
-              <a class="btn btn-ghost" href="MedhaneHadush_CV.pdf" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 19h16"/></svg>
-                Download CV
-              </a>
-              <a class="btn btn-ghost" href="#contact">Let's talk</a>
-            </div>
-            <div class="hero-meta reveal" data-delay="4">
-              <span class="chip">OWASP LLM Top 10</span>
-              <span class="chip violet">Multi-agent systems</span>
-              <span class="chip green">Splunk · MITRE ATT&amp;CK</span>
-              <span class="chip amber">FINMA · GDPR</span>
-              <span class="chip rose">Red-teaming</span>
-            </div>
-          </div>
-          <div class="hero-visual reveal" data-delay="2">
-            <div class="portrait-wrap">
-              <div class="portrait-ring"></div>
-              <div class="portrait-ring r2"></div>
-              <div class="portrait-ring r3"></div>
-              <div class="portrait">
-                <picture>
-                  <source srcset="assets/img/medhane.webp" type="image/webp">
-                  <img src="assets/img/medhane.jpg" alt="Portrait of Medhane Hadush" width="720" height="720" fetchpriority="high">
-                </picture>
-                <div class="portrait-scan" aria-hidden="true"></div>
-              </div>
-              <div class="portrait-badge b1"><span class="led"></span><b>Keynote</b> · Swiss Cyber AI Conf 2026</div>
-              <div class="portrait-badge b2"><span class="led"></span><b>385</b> AI security labs shipped</div>
-              <div class="portrait-badge b3"><span class="led"></span><b>29.9k+</b> views · PedTalk AI</div>
-            </div>
-          </div>
+      <!-- About -->
+      <section class="block" id="about" aria-labelledby="about-h">
+        <h2 class="cmd" id="about-h"><span class="ps1" aria-hidden="true">meda@hadush:~$</span> cat about.txt</h2>
+        <div class="out">
+          <p>I work at the intersection of <strong>offensive AI research</strong> and <strong>defensive engineering</strong>. Over the last two years I designed and shipped a production LLM security training platform mapped to the OWASP LLM Top&nbsp;10, with 385 interactive attack/defense labs, automated adversarial grading and a cascaded judge-model evaluation pipeline that enforces structured output, degrades gracefully and respects token budgets.</p>
+          <p>Before that I operated inside environments where mistakes are expensive: a <strong>national security agency</strong> (INSA, Ethiopia) and a <strong>FINMA-regulated bank</strong> (BCV, Lausanne), tuning Splunk detections against MITRE ATT&amp;CK, improving endpoint intrusion detection and leading fraud investigations.</p>
+          <p>I'm comfortable in high-discretion, compliance-heavy settings, and I enjoy translating deep technical security concepts for non-technical audiences, most recently as a keynote speaker at the Swiss Cyber AI Conference 2026.</p>
         </div>
+      </section>
 
-        <div class="stats-wrap reveal" data-delay="3">
-          <div class="stats" aria-label="Key numbers">
-            <div class="stat"><div class="stat-num"><span data-count="5">0</span><span class="suffix">+</span></div><div class="stat-label">years in security</div></div>
-            <div class="stat"><div class="stat-num"><span data-count="385">0</span></div><div class="stat-label">AI attack/defense labs</div></div>
-            <div class="stat"><div class="stat-num"><span data-count="29900">0</span><span class="suffix">+</span></div><div class="stat-label">views on PedTalk AI</div></div>
-            <div class="stat"><div class="stat-num"><span data-count="10">0</span><span class="suffix">/10</span></div><div class="stat-label">OWASP LLM Top 10 covered</div></div>
-          </div>
-        </div>
-      </div>
-      <div class="scroll-cue" aria-hidden="true"><div class="wheel"></div><span>SCROLL</span></div>
-    </section>
+      <!-- Currently -->
+      <section class="block" id="currently" aria-labelledby="currently-h">
+        <h2 class="cmd" id="currently-h"><span class="ps1" aria-hidden="true">meda@hadush:~$</span> cat currently.txt</h2>
+        <ul class="out list">
+          <li>Shipping new labs and judge-model improvements for QbitDojo</li>
+          <li>Running LLM red-team sessions at Powercoders (Bern)</li>
+          <li>Building FleetHawk: silent-failure detection for AI agent fleets</li>
+          <li>Maintaining PedTalk AI, my real-time voice-AI side project</li>
+          <li>Pushing French from B1 upward</li>
+        </ul>
+      </section>
 
-    <!-- ================= TERMINAL ================= -->
-    <section class="section" id="terminal">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="section-index">01 &nbsp;terminal</span>
-          <h2 class="section-title">Talk to the <span class="grad">portfolio</span></h2>
-          <p class="section-lead">A real shell, not a screenshot. Type a command or click a chip; every answer is pulled from my CV and project data.</p>
-        </div>
-        <div class="term-layout">
-          <div class="reveal">
-            <div class="terminal" id="term" role="region" aria-label="Interactive terminal">
-              <div class="term-bar">
-                <div class="term-dots" aria-hidden="true"><span></span><span></span><span></span></div>
-                <div class="term-title">medhane@hadush: ~ — zsh</div>
-                <div class="term-status"><span class="ok">● online</span><span id="term-clock">--:--</span></div>
-              </div>
-              <div class="term-body" id="term-body" aria-live="polite"></div>
-              <form class="term-input-line" id="term-form" autocomplete="off">
-                <label class="prompt" for="term-input">medhane@hadush <span class="path">~</span> $</label>
-                <input class="term-input" id="term-input" type="text" spellcheck="false" autocapitalize="off" autocorrect="off" placeholder="type 'help'…" aria-label="Terminal command input">
-              </form>
-            </div>
-            <div class="term-chips" id="term-chips">
-              <button class="chip" data-cmd="help">help</button>
-              <button class="chip" data-cmd="whoami">whoami</button>
-              <button class="chip" data-cmd="skills">skills</button>
-              <button class="chip" data-cmd="experience">experience</button>
-              <button class="chip" data-cmd="projects">projects</button>
-              <button class="chip" data-cmd="agents">agents</button>
-              <button class="chip" data-cmd="mods">mods</button>
-              <button class="chip" data-cmd="scan">scan</button>
-              <button class="chip" data-cmd="contact">contact</button>
-              <button class="chip" data-cmd="neofetch">neofetch</button>
-            </div>
-          </div>
-          <aside class="term-side reveal" data-delay="2">
-            <div class="card card-pad">
-              <h3>Shortcuts</h3>
-              <p>Press <span class="kbd">/</span> or <span class="kbd">`</span> anywhere to jump into the shell. <span class="kbd">↑</span> <span class="kbd">↓</span> browse history, <span class="kbd">Tab</span> autocompletes.</p>
-            </div>
-            <div class="card card-pad">
-              <h3>Commands</h3>
-              <ul class="cmd-list">
-                <li><b>whoami</b> profile summary</li>
-                <li><b>skills</b> stack, grouped</li>
-                <li><b>experience</b> roles &amp; impact</li>
-                <li><b>projects</b> what I've shipped</li>
-                <li><b>agents</b> agentic-AI work</li>
-                <li><b>mods</b> side projects</li>
-                <li><b>scan</b> OWASP LLM scan demo</li>
-                <li><b>talks</b> speaking &amp; teaching</li>
-                <li><b>cv</b> open the PDF</li>
-                <li><b>theme</b> dark / light</li>
-                <li><b>matrix</b> you know what it does</li>
-              </ul>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
+      <!-- Skills -->
+      <section class="block" id="skills" aria-labelledby="skills-h">
+        <h2 class="cmd" id="skills-h"><span class="ps1" aria-hidden="true">meda@hadush:~$</span> cat skills.md</h2>
+        <div class="out md">
+          <h3>AI / LLM security</h3>
+          <ul class="list">
+            <li>Adversarial prompt engineering &amp; jailbreak research</li>
+            <li>Prompt-injection attack &amp; defense patterns</li>
+            <li>Judge-model evaluation architectures, weighted scoring</li>
+            <li>OWASP LLM Top 10 threat modelling</li>
+            <li>Red-teaming LLM apps &amp; agents</li>
+            <li>Output handling, RAG / embedding weaknesses, LLM supply chain, system-prompt hardening</li>
+          </ul>
 
-    <div class="container"><div class="divider-glow"></div></div>
+          <h3>Agentic AI &amp; engineering</h3>
+          <ul class="list">
+            <li>Multi-agent orchestration &amp; fleet operations</li>
+            <li>Tool-use guardrails, structured output, token budgets, evals</li>
+            <li>Gemini · Claude · OpenAI APIs, RAG</li>
+            <li>Voice pipelines (STT / TTS)</li>
+            <li>Python · TypeScript · Next.js · PostgreSQL · Docker · Bash · SQL</li>
+          </ul>
 
-    <!-- ================= ABOUT ================= -->
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="section-index">02 &nbsp;about</span>
-          <h2 class="section-title">Security engineer who <span class="grad">builds</span></h2>
+          <h3>Detection &amp; incident response</h3>
+          <ul class="list">
+            <li>Splunk SIEM · detection-as-code · use-case engineering</li>
+            <li>MITRE ATT&amp;CK mapping · log analysis</li>
+            <li>Triage, containment, forensics, fraud investigation (RIO methodology)</li>
+            <li>HIPS · IDS/IPS · firewalling · Nginx hardening</li>
+          </ul>
+
+          <h3>Governance, identity &amp; infrastructure</h3>
+          <ul class="list">
+            <li>FINMA · GDPR · NIST CSF · OWASP Top 10</li>
+            <li>Multi-role RBAC · auth flows · session security</li>
+            <li>EU-hosted cloud · credential rotation · bot protection</li>
+            <li>Linux (5+ yrs) · Bash · Git · Wireshark fundamentals</li>
+          </ul>
+
+          <h3>Systems &amp; desktop</h3>
+          <ul class="list">
+            <li>C# · .NET (runtime plugins &amp; services)</li>
+            <li>Rust · Tauri (desktop apps) · C++ (telemetry &amp; native plugins) · React (tool UIs)</li>
+            <li>Real-time voice AI (STT · LLM · TTS)</li>
+            <li>Computer vision (webcam head tracking)</li>
+            <li>Build pipelines (declarative presets, packaging)</li>
+          </ul>
         </div>
-        <div class="about-grid">
-          <div class="card card-pad reveal">
-            <div class="about-text">
-              <p>I work at the intersection of <strong>offensive AI research</strong> and <strong>defensive engineering</strong>. Over the last two years I designed and shipped a production LLM security training platform mapped to the OWASP LLM Top 10, with 385 interactive attack/defense labs, automated adversarial grading and a cascaded judge-model evaluation pipeline that enforces structured output, degrades gracefully and respects token budgets.</p>
-              <p>Before that I operated inside environments where mistakes are expensive: a <strong>national security agency</strong> (INSA, Ethiopia) and a <strong>FINMA-regulated bank</strong> (BCV, Lausanne), tuning Splunk detections against MITRE ATT&amp;CK, improving endpoint intrusion detection and leading fraud investigations.</p>
-              <p>I'm comfortable in high-discretion, compliance-heavy settings, and I enjoy translating deep technical security concepts for non-technical audiences, most recently as a <strong>keynote speaker at the Swiss Cyber AI Conference 2026</strong>.</p>
-            </div>
-            <div class="facts" style="margin-top:1.4rem">
-              <div class="fact">
-                <div class="fact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></div>
-                <div><b>Agency → Bank → Independent</b><span>INSA national security · BCV FINMA-regulated banking · QbitDojo</span></div>
-              </div>
-              <div class="fact">
-                <div class="fact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H4z"/><path d="M8 20h8M12 16v4"/><path d="m8 9 2 2 4-4"/></svg></div>
-                <div><b>Guest instructor, Powercoders Bern</b><span>LLM security &amp; red-teaming sessions for the ICT bootcamp I graduated from</span></div>
-              </div>
-              <div class="fact">
-                <div class="fact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
-                <div><b>English · French · Amharic · Tigrinya</b><span>Based in Lausanne, working across Swiss and international teams</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="card now-panel reveal" data-delay="2">
-            <h3><span class="eyebrow"><span class="dot"></span> now</span></h3>
-            <ul class="now-list">
-              <li>Shipping new labs and judge-model improvements for QbitDojo</li>
-              <li>Running LLM red-team sessions at Powercoders (Bern)</li>
-              <li>Building FleetHawk: silent-failure detection for AI agent fleets</li>
-              <li>Maintaining PedTalk AI, my real-time voice-AI side project</li>
-              <li>Pushing French from B1 upward</li>
+      </section>
+
+      <!-- Experience -->
+      <section class="block" id="experience" aria-labelledby="experience-h">
+        <h2 class="cmd" id="experience-h"><span class="ps1" aria-hidden="true">meda@hadush:~$</span> cat experience.md</h2>
+        <div class="out md">
+          <article class="entry">
+            <h3>Independent technical work · AI security engineering</h3>
+            <p class="meta"><span class="when">Jan 2025 – present</span> · QbitDojo · Powercoders · Swiss Cyber AI Conference <span class="muted">· Lausanne, Switzerland</span></p>
+            <ul class="list">
+              <li>Designed and shipped a production LLM security training platform mapped to the OWASP LLM Top 10: 385 interactive attack/defense labs with automated adversarial grading.</li>
+              <li>Architected a cascaded judge-model evaluation pipeline on EU-hosted cloud infrastructure with structured-output enforcement, graceful degradation and token-budget safeguards.</li>
+              <li>Implemented multi-role RBAC, GDPR-compliant consent, disposable-email blocking, bot protection and credential-rotation hygiene.</li>
+              <li>Keynote speaker, Swiss Cyber AI Conference 2026 (Lugano).</li>
+              <li>Partner and guest instructor at the Powercoders ICT Bootcamp (Bern), delivering LLM security and red-teaming sessions.</li>
             </ul>
-            <div class="hero-meta" style="margin-top:1.2rem">
-              <span class="chip">Python</span><span class="chip">TypeScript</span><span class="chip">Bash</span><span class="chip">SQL</span><span class="chip">Linux 5+ yrs</span><span class="chip">Docker</span><span class="chip">PostgreSQL</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= SKILLS ================= -->
-    <section class="section" id="skills">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="section-index">03 &nbsp;skills</span>
-          <h2 class="section-title">A 3D map of what I <span class="grad">work with</span></h2>
-          <p class="section-lead">Drag to rotate, hover a node, filter by domain. The core is the AI-security work; everything else orbits it.</p>
-        </div>
-        <div class="skills-layout">
-          <div class="card constellation-card reveal">
-            <div class="constellation-head">
-              <span class="live">skill-graph · 42 nodes</span>
-              <span id="constellation-hint">drag · hover · filter</span>
-            </div>
-            <div class="constellation-stage" id="constellation-stage">
-              <canvas id="skills-canvas"></canvas>
-              <div class="constellation-tip" id="constellation-tip"><b></b><span></span></div>
-            </div>
-            <div class="constellation-legend" id="constellation-legend">
-              <button class="legend-btn active" data-cat="all" style="--c: var(--text-2)"><i></i>all</button>
-              <button class="legend-btn" data-cat="ai" style="--c: var(--cyan)"><i></i>AI/LLM security</button>
-              <button class="legend-btn" data-cat="agents" style="--c: var(--violet)"><i></i>agentic AI &amp; engineering</button>
-              <button class="legend-btn" data-cat="detect" style="--c: var(--green)"><i></i>detection &amp; response</button>
-              <button class="legend-btn" data-cat="gov" style="--c: var(--amber)"><i></i>governance &amp; infra</button>
-              <button class="legend-btn" data-cat="mod" style="--c: var(--rose)"><i></i>systems &amp; desktop</button>
-            </div>
-          </div>
-          <div class="skill-groups stagger reveal" id="skill-groups">
-            <div class="card skill-group" style="--c: var(--cyan)">
-              <h3><i></i>AI / LLM security</h3>
-              <div class="skill-bars">
-                <div class="skill-bar"><span class="name">Adversarial prompt engineering &amp; jailbreak research</span><span class="pct">expert</span><div class="track"><div class="fill" style="--w:95%"></div></div></div>
-                <div class="skill-bar"><span class="name">Prompt-injection attack &amp; defense patterns</span><span class="pct">expert</span><div class="track"><div class="fill" style="--w:94%"></div></div></div>
-                <div class="skill-bar"><span class="name">Judge-model evaluation architectures</span><span class="pct">advanced</span><div class="track"><div class="fill" style="--w:90%"></div></div></div>
-                <div class="skill-bar"><span class="name">OWASP LLM Top 10 threat modelling</span><span class="pct">expert</span><div class="track"><div class="fill" style="--w:92%"></div></div></div>
-              </div>
-            </div>
-            <div class="card skill-group" style="--c: var(--violet)">
-              <h3><i></i>Agentic AI &amp; engineering</h3>
-              <div class="skill-bars">
-                <div class="skill-bar"><span class="name">Multi-agent orchestration &amp; fleet operations</span><span class="pct">advanced</span><div class="track"><div class="fill" style="--w:90%"></div></div></div>
-                <div class="skill-bar"><span class="name">Tool-use guardrails, structured output, token budgets</span><span class="pct">advanced</span><div class="track"><div class="fill" style="--w:88%"></div></div></div>
-                <div class="skill-bar"><span class="name">Python · TypeScript · Next.js · PostgreSQL · Docker</span><span class="pct">advanced</span><div class="track"><div class="fill" style="--w:86%"></div></div></div>
-                <div class="skill-bar"><span class="name">Gemini · Claude · OpenAI APIs, RAG, evals</span><span class="pct">advanced</span><div class="track"><div class="fill" style="--w:87%"></div></div></div>
-              </div>
-            </div>
-            <div class="card skill-group" style="--c: var(--green)">
-              <h3><i></i>Detection &amp; incident response</h3>
-              <div class="skill-bars">
-                <div class="skill-bar"><span class="name">Splunk SIEM · detection-as-code · use-case engineering</span><span class="pct">advanced</span><div class="track"><div class="fill" style="--w:88%"></div></div></div>
-                <div class="skill-bar"><span class="name">MITRE ATT&amp;CK mapping · log analysis</span><span class="pct">advanced</span><div class="track"><div class="fill" style="--w:88%"></div></div></div>
-                <div class="skill-bar"><span class="name">Triage, containment, forensics, fraud investigation (RIO)</span><span class="pct">advanced</span><div class="track"><div class="fill" style="--w:90%"></div></div></div>
-                <div class="skill-bar"><span class="name">HIPS · IDS/IPS · firewalling · Nginx hardening</span><span class="pct">proficient</span><div class="track"><div class="fill" style="--w:80%"></div></div></div>
-              </div>
-            </div>
-            <div class="card skill-group" style="--c: var(--amber)">
-              <h3><i></i>Governance, identity &amp; infrastructure</h3>
-              <div class="skill-bars">
-                <div class="skill-bar"><span class="name">FINMA · GDPR · NIST CSF · OWASP Top 10</span><span class="pct">advanced</span><div class="track"><div class="fill" style="--w:85%"></div></div></div>
-                <div class="skill-bar"><span class="name">Multi-role RBAC · auth flows · session security</span><span class="pct">advanced</span><div class="track"><div class="fill" style="--w:88%"></div></div></div>
-                <div class="skill-bar"><span class="name">EU-hosted cloud · credential rotation · bot protection</span><span class="pct">advanced</span><div class="track"><div class="fill" style="--w:84%"></div></div></div>
-                <div class="skill-bar"><span class="name">Linux (5+ yrs) · Bash · Git · Wireshark fundamentals</span><span class="pct">advanced</span><div class="track"><div class="fill" style="--w:88%"></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= AI SECURITY ================= -->
-    <section class="section" id="ai-security">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="section-index">04 &nbsp;ai security &amp; agentic ai</span>
-          <h2 class="section-title">Attack patterns in, <span class="grad">defenses</span> out</h2>
-          <p class="section-lead">The core of my current work: turning adversarial research into training, evaluation pipelines and agent systems that hold up under pressure.</p>
-        </div>
-        <div class="ai-grid">
-          <div class="card card-pad span-2 reveal">
-            <div class="project-top" style="margin-bottom:1rem">
-              <div>
-                <div class="project-kind">OWASP LLM Top 10 · 2025</div>
-                <h3>Threat coverage across every category</h3>
-              </div>
-              <span class="chip green">385 labs · automated grading</span>
-            </div>
-            <div class="owasp-grid stagger">
-              <div class="owasp-card"><span class="status"></span><span class="owasp-id">LLM01</span><span class="owasp-name">Prompt Injection</span><span class="owasp-note">Direct &amp; indirect injection labs; the judge pipeline's core test case.</span></div>
-              <div class="owasp-card"><span class="status"></span><span class="owasp-id">LLM02</span><span class="owasp-name">Sensitive Information Disclosure</span><span class="owasp-note">PII and secret leakage scenarios with output scanning.</span></div>
-              <div class="owasp-card"><span class="status"></span><span class="owasp-id">LLM03</span><span class="owasp-name">Supply Chain</span><span class="owasp-note">Poisoned models, plugins and dependencies in the QAISP exam bank.</span></div>
-              <div class="owasp-card"><span class="status"></span><span class="owasp-id">LLM04</span><span class="owasp-name">Data &amp; Model Poisoning</span><span class="owasp-note">Training-data tampering and backdoor behaviour labs.</span></div>
-              <div class="owasp-card"><span class="status"></span><span class="owasp-id">LLM05</span><span class="owasp-name">Improper Output Handling</span><span class="owasp-note">XSS / SQLi through model output; structured-output enforcement.</span></div>
-              <div class="owasp-card"><span class="status"></span><span class="owasp-id">LLM06</span><span class="owasp-name">Excessive Agency</span><span class="owasp-note">Least-agency design and tool permissioning for agents.</span></div>
-              <div class="owasp-card"><span class="status"></span><span class="owasp-id">LLM07</span><span class="owasp-name">System Prompt Leakage</span><span class="owasp-note">Extraction attacks and hardening patterns.</span></div>
-              <div class="owasp-card"><span class="status"></span><span class="owasp-id">LLM08</span><span class="owasp-name">Vector &amp; Embedding Weaknesses</span><span class="owasp-note">RAG poisoning and cross-tenant retrieval scenarios.</span></div>
-              <div class="owasp-card"><span class="status"></span><span class="owasp-id">LLM09</span><span class="owasp-name">Misinformation</span><span class="owasp-note">Hallucination handling and grounding checks.</span></div>
-              <div class="owasp-card"><span class="status"></span><span class="owasp-id">LLM10</span><span class="owasp-name">Unbounded Consumption</span><span class="owasp-note">Token-budget safeguards and denial-of-wallet defenses.</span></div>
-            </div>
-          </div>
-
-          <div class="card card-pad reveal" id="pipeline-card">
-            <div class="pipe-layout">
-            <div class="pipe-intro">
-              <div class="project-kind">Judge-model evaluation pipeline</div>
-              <h3 style="margin:.3rem 0 .4rem">Cascaded scoring, live</h3>
-              <p style="color:var(--muted);font-size:.9rem;margin-bottom:1rem">Multi-model judges score each defense across three weighted dimensions. Structured output is enforced, degradation is graceful and every call has a token budget. Watch a few evaluations run.</p>
-              <div class="pipe-sample"><span class="k">input ›</span><span id="pipe-sample-text">…</span></div>
-            </div>
-            <div class="pipeline">
-              <div class="pipe-track" id="pipe-track">
-                <div class="pipe-node" data-step="0"><div class="ico">stage 1</div><div class="lbl">Guardrail</div><div class="sub">pattern &amp; policy</div></div>
-                <div class="pipe-node" data-step="1"><div class="ico">stage 2</div><div class="lbl">Judge A</div><div class="sub">fast triage</div></div>
-                <div class="pipe-node" data-step="2"><div class="ico">stage 3</div><div class="lbl">Judge B</div><div class="sub">deep reasoning</div></div>
-                <div class="pipe-node" data-step="3"><div class="ico">stage 4</div><div class="lbl">Judge C</div><div class="sub">tie-break</div></div>
-                <div class="pipe-node verdict" data-step="4"><div class="ico">output</div><div class="lbl">Verdict</div><div class="badge" id="pipe-verdict">…</div></div>
-              </div>
-              <div class="pipe-scores">
-                <div class="score"><div class="lbl">blocks attack</div><div class="val" id="s1">–</div><div class="track"><div class="fill" id="f1"></div></div></div>
-                <div class="score"><div class="lbl">preserves function</div><div class="val" id="s2">–</div><div class="track"><div class="fill" id="f2"></div></div></div>
-                <div class="score"><div class="lbl">minimality</div><div class="val" id="s3">–</div><div class="track"><div class="fill" id="f3"></div></div></div>
-              </div>
-            </div>
-            </div>
-          </div>
-
-          <div class="card card-pad reveal" data-delay="1" id="fleet-card">
-            <div class="project-kind">Agentic AI</div>
-            <h3 style="margin:.3rem 0 .4rem">Fleets of agents, kept honest</h3>
-            <p style="color:var(--muted);font-size:.9rem;margin-bottom:1rem">I've been building and operating multi-agent systems for over a year: orchestration, tool permissioning, evals and the monitoring that catches agents failing silently.</p>
-            <div class="fleet">
-              <div>
-                <div class="fleet-stage" id="fleet-stage">
-                  <svg viewBox="0 0 400 400" aria-hidden="true">
-                    <g id="fleet-lines" stroke="rgba(148,163,184,.35)" stroke-width="1.2" fill="none"></g>
-                  </svg>
-                  <div class="fleet-core"><b>Orchestrator</b>plans · routes · verifies</div>
-                  <div class="fleet-agent" style="--a:-90deg;--r:150px"><div><b>Planner</b>scopes tasks<div class="st"></div></div></div>
-                  <div class="fleet-agent" style="--a:-30deg;--r:150px"><div><b>Coder</b>implements<div class="st"></div></div></div>
-                  <div class="fleet-agent" style="--a:30deg;--r:150px"><div><b>Reviewer</b>diffs &amp; lint<div class="st"></div></div></div>
-                  <div class="fleet-agent" style="--a:90deg;--r:150px"><div><b>Tester</b>runs suites<div class="st"></div></div></div>
-                  <div class="fleet-agent" style="--a:150deg;--r:150px"><div><b>Security</b>threat checks<div class="st"></div></div></div>
-                  <div class="fleet-agent" style="--a:210deg;--r:150px"><div><b>Docs</b>writes changelog<div class="st"></div></div></div>
-                </div>
-                <div class="fleet-log" id="fleet-log" aria-hidden="true"></div>
-              </div>
-              <div class="fleet-copy">
-                <ul class="feature-list">
-                  <li><span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l2.5 2.5M16.5 16.5 19 19M5 19l2.5-2.5M16.5 7.5 19 5"/></svg></span><div><b>Multi-agent orchestration</b>Ran a 7-agent autonomous development fleet (planning, coding, review, testing, security, docs) for day-to-day product work.</div></li>
-                  <li><span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></span><div><b>FleetHawk</b>Open-source CLI that detects silent failures in AI fleets: wrong models, stale configs, ghost monitors, agents that stopped producing output.</div></li>
-                  <li><span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 1-13.5 7.8L3 21l1.2-4.5A9 9 0 1 1 21 12Z"/></svg></span><div><b>PedTalk AI</b>LLM-driven NPC conversations with context, memory and spatial voice inside a AAA game; close to 30k views on the public release.</div></li>
-                  <li><span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg></span><div><b>Guardrails by design</b>Least agency, deterministic paths before model calls, raw telemetry and logs never sent to a model unfiltered, human approval on anything irreversible.</div></li>
-                </ul>
-                <div class="project-links">
-                  <a class="link-arrow" href="https://github.com/MEdaHad/fleethawk" target="_blank" rel="noopener">FleetHawk on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= EXPERIENCE ================= -->
-    <section class="section" id="experience">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="section-index">05 &nbsp;experience</span>
-          <h2 class="section-title">Where I've <span class="grad">operated</span></h2>
-        </div>
-        <div class="timeline" id="timeline">
-          <div class="tl-progress" id="tl-progress" aria-hidden="true"></div>
-          <article class="tl-item reveal">
-            <div class="card tl-card">
-              <div class="tl-head"><h3 class="tl-role">Independent technical work · AI security engineering</h3><span class="tl-when">Jan 2025 – present</span></div>
-              <div class="tl-org">QbitDojo · Powercoders · Swiss Cyber AI Conference</div>
-              <div class="tl-where">Lausanne, Switzerland</div>
-              <ul>
-                <li>Designed and shipped a production LLM security training platform mapped to the OWASP LLM Top 10: 385 interactive attack/defense labs with automated adversarial grading.</li>
-                <li>Architected a cascaded judge-model evaluation pipeline on EU-hosted cloud infrastructure with structured-output enforcement, graceful degradation and token-budget safeguards.</li>
-                <li>Implemented multi-role RBAC, GDPR-compliant consent, disposable-email blocking, bot protection and credential-rotation hygiene.</li>
-                <li>Keynote speaker, Swiss Cyber AI Conference 2026 (Lugano): "Hacking LLM Applications: Attack Patterns, Defense Strategies, and Why AI Security Training Matters."</li>
-                <li>Partner and guest instructor at the Powercoders ICT Bootcamp (Bern), delivering LLM security and red-teaming sessions.</li>
-              </ul>
-              <div class="tl-tags"><span class="chip">LLM security</span><span class="chip violet">Agentic AI</span><span class="chip green">Next.js · PostgreSQL</span><span class="chip amber">GDPR · RBAC</span></div>
-            </div>
           </article>
-          <article class="tl-item reveal">
-            <div class="card tl-card">
-              <div class="tl-head"><h3 class="tl-role">Technical Security Coordinator</h3><span class="tl-when">Aug 2024 – Dec 2024</span></div>
-              <div class="tl-org">Banque Cantonale Vaudoise (BCV)</div>
-              <div class="tl-where">Lausanne, Switzerland · FINMA-regulated banking</div>
-              <ul>
-                <li>Operated within high-availability, strict-compliance banking infrastructure with zero-tolerance incident response.</li>
-                <li>Enhanced the HIPS methodology, improving endpoint intrusion-detection accuracy across the bank's estate.</li>
-                <li>Developed the RIO incident-response methodology, adopted by the security team.</li>
-                <li>Led fraud incident investigations, reducing financial exposure and improving response SLAs.</li>
-              </ul>
-              <div class="tl-tags"><span class="chip green">HIPS</span><span class="chip green">Incident response</span><span class="chip amber">FINMA</span><span class="chip">Fraud investigation</span></div>
-            </div>
+          <article class="entry">
+            <h3>Technical Security Coordinator</h3>
+            <p class="meta"><span class="when">Aug 2024 – Dec 2024</span> · Banque Cantonale Vaudoise (BCV) <span class="muted">· Lausanne, Switzerland · FINMA-regulated banking</span></p>
+            <ul class="list">
+              <li>Operated within high-availability, strict-compliance banking infrastructure with zero-tolerance incident response.</li>
+              <li>Enhanced the HIPS methodology, improving endpoint intrusion-detection accuracy across the bank's estate.</li>
+              <li>Developed the RIO incident-response methodology, adopted by the security team.</li>
+              <li>Led fraud incident investigations, reducing financial exposure and improving response SLAs.</li>
+            </ul>
           </article>
-          <article class="tl-item reveal">
-            <div class="card tl-card">
-              <div class="tl-head"><h3 class="tl-role">Cybersecurity Engineer (internship)</h3><span class="tl-when">Aug 2023 – Aug 2024</span></div>
-              <div class="tl-org">Banque Cantonale Vaudoise (BCV)</div>
-              <div class="tl-where">Lausanne, Switzerland</div>
-              <ul>
-                <li>Tuned SIEM detection use cases in Splunk and integrated MITRE ATT&amp;CK into detection, response and mitigation workflows.</li>
-                <li>Proposed an enhanced incident-response methodology that the team adopted.</li>
-                <li>Conducted fraud investigations across banking customer incidents.</li>
-              </ul>
-              <div class="tl-tags"><span class="chip green">Splunk</span><span class="chip green">MITRE ATT&amp;CK</span><span class="chip">Detection engineering</span></div>
-            </div>
+          <article class="entry">
+            <h3>Cybersecurity Engineer (internship)</h3>
+            <p class="meta"><span class="when">Aug 2023 – Aug 2024</span> · Banque Cantonale Vaudoise (BCV) <span class="muted">· Lausanne, Switzerland</span></p>
+            <ul class="list">
+              <li>Tuned SIEM detection use cases in Splunk and integrated MITRE ATT&amp;CK into detection, response and mitigation workflows.</li>
+              <li>Proposed an enhanced incident-response methodology that the team adopted.</li>
+              <li>Conducted fraud investigations across banking customer incidents.</li>
+            </ul>
           </article>
-          <article class="tl-item reveal">
-            <div class="card tl-card">
-              <div class="tl-head"><h3 class="tl-role">Cybersecurity Analyst</h3><span class="tl-when">Jan 2018 – Sep 2020</span></div>
-              <div class="tl-org">Information Network Security Agency (INSA)</div>
-              <div class="tl-where">Addis Ababa, Ethiopia · national security agency</div>
-              <ul>
-                <li>Applied machine-learning techniques to automate cryptanalysis tasks: early applied-ML work in a national-security context.</li>
-                <li>Built a web-based internal security training platform with cloud storage integration, used by agency staff.</li>
-                <li>Developed and delivered national cybersecurity awareness training programmes.</li>
-              </ul>
-              <div class="tl-tags"><span class="chip violet">Applied ML</span><span class="chip">Cryptanalysis</span><span class="chip amber">Security awareness</span></div>
-            </div>
+          <article class="entry">
+            <h3>Cybersecurity Analyst</h3>
+            <p class="meta"><span class="when">Jan 2018 – Sep 2020</span> · Information Network Security Agency (INSA) <span class="muted">· Addis Ababa, Ethiopia · national security agency</span></p>
+            <ul class="list">
+              <li>Applied machine-learning techniques to automate cryptanalysis tasks: early applied-ML work in a national-security context.</li>
+              <li>Built a web-based internal security training platform with cloud storage integration, used by agency staff.</li>
+              <li>Developed and delivered national cybersecurity awareness training programmes.</li>
+            </ul>
           </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ================= PROJECTS ================= -->
-    <section class="section" id="projects">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="section-index">06 &nbsp;projects</span>
-          <h2 class="section-title">Things I've <span class="grad">shipped</span></h2>
-        </div>
-        <div class="projects-grid stagger reveal">
-          <article class="card project featured tilt">
-            <div class="project-top"><span class="project-kind">AI security training platform</span><span class="chip green">live</span></div>
-            <h3>QbitDojo</h3>
+      <!-- Projects -->
+      <section class="block" id="projects" aria-labelledby="projects-h">
+        <h2 class="cmd" id="projects-h"><span class="ps1" aria-hidden="true">meda@hadush:~$</span> ls projects/</h2>
+        <ul class="ls out">
+          <li><a href="#qbitdojo">qbitdojo.md</a></li>
+          <li><a href="#ai-security">judge-pipeline.md</a></li>
+          <li><a href="#qaisp">qaisp.md</a></li>
+          <li><a href="#fleethawk">fleethawk.md</a></li>
+          <li><a href="#medaxp">medaxp-ai-fleet.md</a></li>
+          <li><a href="#agent-systems">how-i-build-agent-systems.md</a></li>
+        </ul>
+
+        <article class="sub" id="qbitdojo" aria-labelledby="qbitdojo-h">
+          <p class="cmd"><span class="ps1" aria-hidden="true">meda@hadush:~$</span> cat projects/qbitdojo.md</p>
+          <div class="out md">
+            <h3 id="qbitdojo-h">QbitDojo</h3>
+            <p class="muted">AI security training platform · live</p>
             <p>Hands-on AI security training mapped to the OWASP LLM Top 10: prompt injection, jailbreaking, data poisoning, output handling and more, each lab graded automatically by adversarial judge models. Built with privacy by design on EU-hosted infrastructure.</p>
-            <div class="project-metrics"><div><b>385</b>interactive labs</div><div><b>10/10</b>OWASP LLM categories</div><div><b>EU</b>hosted · GDPR</div></div>
-            <div class="project-tags"><span class="chip">Next.js</span><span class="chip">TypeScript</span><span class="chip">PostgreSQL</span><span class="chip">Docker</span><span class="chip">LLM APIs</span><span class="chip">RBAC</span></div>
-            <div class="project-links"><a class="link-arrow" href="https://qbitdojo.com" target="_blank" rel="noopener">qbitdojo.com <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
-          </article>
-          <article class="card project tilt">
-            <div class="project-top"><span class="project-kind">Evaluation infrastructure</span></div>
-            <h3>Judge-model evaluation pipeline</h3>
-            <p>Cascaded multi-model scoring system that evaluates adversarial prompt defenses across three weighted dimensions: blocks the attack, preserves function, minimality.</p>
-            <div class="project-tags"><span class="chip">Structured output</span><span class="chip">Graceful degradation</span><span class="chip">Token budgets</span></div>
-          </article>
-          <article class="card project tilt">
-            <div class="project-top"><span class="project-kind">Certification methodology</span></div>
-            <h3>QAISP</h3>
+            <dl class="kv">
+              <div><dt>interactive labs</dt><dd>385</dd></div>
+              <div><dt>OWASP LLM categories</dt><dd>10/10</dd></div>
+              <div><dt>hosted · GDPR</dt><dd>EU</dd></div>
+            </dl>
+            <h4>OWASP LLM Top 10 (2025) coverage</h4>
+            <ul class="owasp">
+              <li><b>LLM01</b> Prompt Injection — direct &amp; indirect injection labs; the judge pipeline's core test case.</li>
+              <li><b>LLM02</b> Sensitive Information Disclosure — PII and secret leakage scenarios with output scanning.</li>
+              <li><b>LLM03</b> Supply Chain — poisoned models, plugins and dependencies in the QAISP exam bank.</li>
+              <li><b>LLM04</b> Data &amp; Model Poisoning — training-data tampering and backdoor behaviour labs.</li>
+              <li><b>LLM05</b> Improper Output Handling — XSS / SQLi through model output; structured-output enforcement.</li>
+              <li><b>LLM06</b> Excessive Agency — least-agency design and tool permissioning for agents.</li>
+              <li><b>LLM07</b> System Prompt Leakage — extraction attacks and hardening patterns.</li>
+              <li><b>LLM08</b> Vector &amp; Embedding Weaknesses — RAG poisoning and cross-tenant retrieval scenarios.</li>
+              <li><b>LLM09</b> Misinformation — hallucination handling and grounding checks.</li>
+              <li><b>LLM10</b> Unbounded Consumption — token-budget safeguards and denial-of-wallet defenses.</li>
+            </ul>
+            <p class="meta">Next.js · TypeScript · PostgreSQL · Docker · LLM APIs · RBAC — <a href="https://qbitdojo.com" rel="noopener">qbitdojo.com</a></p>
+          </div>
+        </article>
+
+        <article class="sub" id="ai-security" aria-labelledby="judge-h">
+          <p class="cmd"><span class="ps1" aria-hidden="true">meda@hadush:~$</span> cat projects/judge-pipeline.md</p>
+          <div class="out md">
+            <h3 id="judge-h">Judge-model evaluation pipeline</h3>
+            <p class="muted">Evaluation infrastructure</p>
+            <p>Cascaded multi-model scoring system that evaluates adversarial prompt defenses across three weighted dimensions: blocks the attack, preserves function, minimality. Stages: guardrail (pattern &amp; policy) → fast-triage judge → deep-reasoning judge → tie-break judge → verdict.</p>
+            <p class="meta">Structured output · graceful degradation · token budgets</p>
+          </div>
+        </article>
+
+        <article class="sub" id="qaisp" aria-labelledby="qaisp-h">
+          <p class="cmd"><span class="ps1" aria-hidden="true">meda@hadush:~$</span> cat projects/qaisp.md</p>
+          <div class="out md">
+            <h3 id="qaisp-h">QAISP</h3>
+            <p class="muted">Certification methodology</p>
             <p>Three-tier AI security competency framework (Associate / Practitioner / Expert) with a 150-question exam bank covering prompt injection, model inversion and supply-chain attacks, plus QR-verifiable certificates.</p>
-            <div class="project-tags"><span class="chip">Curriculum</span><span class="chip">Assessment</span><span class="chip">Verification</span></div>
-          </article>
-          <article class="card project tilt">
-            <div class="project-top"><span class="project-kind">Open source · agent ops</span><span class="chip violet">npm</span></div>
-            <h3>FleetHawk</h3>
-            <p>CLI for AI-fleet diagnostics, monitoring and release safety. Surfaces silent failures across Claude Code, Codex, OpenClaw and any framework that leaves config or session artifacts behind.</p>
-            <div class="project-tags"><span class="chip">TypeScript</span><span class="chip">CLI</span><span class="chip">Observability</span></div>
-            <div class="project-links"><a class="link-arrow" href="https://github.com/MEdaHad/fleethawk" target="_blank" rel="noopener">github.com/MEdaHad/fleethawk <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
-          </article>
-          <article class="card project tilt">
-            <div class="project-top"><span class="project-kind">Autonomous development</span></div>
-            <h3>MedaXP AI Fleet</h3>
-            <p>Seven-agent autonomous development system: an orchestrator routing work to planning, coding, review, testing, security and documentation agents, with human approval gates on anything irreversible.</p>
-            <div class="project-tags"><span class="chip violet">Multi-agent</span><span class="chip violet">Tool use</span><span class="chip">Evals</span></div>
-          </article>
-        </div>
-      </div>
-    </section>
+            <p class="meta">Curriculum · assessment · verification</p>
+          </div>
+        </article>
 
-    <!-- ================= SIDE PROJECTS ================= -->
-    <section class="section" id="modding">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="section-index">07 &nbsp;off the clock</span>
-          <h2 class="section-title">Side projects, <span class="grad">shipped for real</span></h2>
-          <p class="section-lead">A few personal projects released under the RioticGamer name. They're where I take ideas from work into a different domain: real-time voice AI, computer vision and build tooling, with the same guardrail thinking.</p>
+        <article class="sub" id="fleethawk" aria-labelledby="fleethawk-h">
+          <p class="cmd"><span class="ps1" aria-hidden="true">meda@hadush:~$</span> cat projects/fleethawk.md</p>
+          <div class="out md">
+            <h3 id="fleethawk-h">FleetHawk</h3>
+            <p class="muted">Open source · agent ops · npm</p>
+            <p>CLI for AI-fleet diagnostics, monitoring and release safety. Surfaces silent failures (wrong models, stale configs, ghost monitors, agents that stopped producing output) across Claude Code, Codex, OpenClaw and any framework that leaves config or session artifacts behind.</p>
+            <p class="meta">TypeScript · CLI · observability — <a href="https://github.com/MEdaHad/fleethawk" rel="noopener">GitHub</a></p>
+          </div>
+        </article>
+
+        <article class="sub" id="medaxp" aria-labelledby="medaxp-h">
+          <p class="cmd"><span class="ps1" aria-hidden="true">meda@hadush:~$</span> cat projects/medaxp-ai-fleet.md</p>
+          <div class="out md">
+            <h3 id="medaxp-h">MedaXP AI Fleet</h3>
+            <p class="muted">Autonomous development</p>
+            <p>Seven-agent autonomous development system: an orchestrator routing work to planning, coding, review, testing, security and documentation agents, with human approval gates on anything irreversible. Used for day-to-day product work.</p>
+            <p class="meta">Multi-agent · tool use · evals</p>
+          </div>
+        </article>
+
+        <article class="sub" id="agent-systems" aria-labelledby="agent-systems-h">
+          <p class="cmd"><span class="ps1" aria-hidden="true">meda@hadush:~$</span> cat projects/how-i-build-agent-systems.md</p>
+          <div class="out md">
+            <h3 id="agent-systems-h">How I build agent systems</h3>
+            <p>I've been building and operating multi-agent systems for over a year: orchestration, tool permissioning, evals and the monitoring that catches agents failing silently. Guardrails by design: least agency, deterministic paths before model calls, raw telemetry and logs never sent to a model unfiltered, and human approval on anything irreversible. The same thinking runs a support Discord bot: deterministic troubleshooting first, a Gemini knowledge base second.</p>
+          </div>
+        </article>
+      </section>
+
+      <!-- Side projects -->
+      <section class="block" id="side-projects" aria-labelledby="side-h">
+        <h2 class="cmd" id="side-h"><span class="ps1" aria-hidden="true">meda@hadush:~$</span> ls side-projects/</h2>
+        <div class="out" id="modding">
+          <p><strong>Side projects · RioticGamer</strong></p>
+          <p class="muted">Personal projects where I take ideas from work into a different domain: real-time voice AI, computer vision and build tooling, with the same guardrail thinking.</p>
+          <ul class="ls">
+            <li><a href="#pedtalk">pedtalk-ai.md</a></li>
+            <li><a href="#eyvro">eyvro.md</a></li>
+            <li><a href="#halogen">halogen.md</a></li>
+          </ul>
         </div>
-        <div class="side-grid stagger reveal">
-          <article class="card side-card tilt">
-            <div class="side-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3Z"/><path d="M19 12a7 7 0 0 1-14 0M12 19v3"/></svg></div>
-            <div><span class="kind">Voice AI · real time</span><h3>PedTalk AI</h3></div>
-            <p>Voice-driven, context-aware NPC conversations inside GTA V: speak naturally to characters and get spoken, in-character answers powered by Gemini, with automatic language detection and spatial audio. The professional edition adds multi-person scenes and persistent memory.</p>
-            <div class="side-meta"><span><b>29.9k+</b> views</span><span>public release · 2026</span></div>
-            <div class="project-links"><a class="link-arrow" href="https://www.lcpdfr.com/downloads/gta5mods/scripts/54809-pedtalk-ai-v10-community-edition/" target="_blank" rel="noopener">Release page <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
-          </article>
-          <article class="card side-card tilt">
-            <div class="side-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></div>
-            <div><span class="kind">Computer vision · native Windows</span><h3>EYVRO</h3></div>
+
+        <article class="sub" id="pedtalk" aria-labelledby="pedtalk-h">
+          <p class="cmd"><span class="ps1" aria-hidden="true">meda@hadush:~$</span> cat side-projects/pedtalk-ai.md</p>
+          <div class="out md">
+            <h3 id="pedtalk-h">PedTalk AI</h3>
+            <p class="muted">Voice AI · real time</p>
+            <p>Voice-driven, context-aware NPC conversations inside GTA V: speak naturally to characters and get spoken, in-character answers powered by Gemini, with context, memory, automatic language detection and spatial audio. The professional edition adds multi-person scenes and persistent memory.</p>
+            <p>Brought AI into GTA V and made NPC interactions look very realistic. It went viral and is still used by thousands of players globally.</p>
+            <p class="meta">Public release 2026 — <a href="https://www.lcpdfr.com/downloads/gta5mods/scripts/54809-pedtalk-ai-v10-community-edition/" rel="noopener">Release page</a></p>
+          </div>
+        </article>
+
+        <article class="sub" id="eyvro" aria-labelledby="eyvro-h">
+          <p class="cmd"><span class="ps1" aria-hidden="true">meda@hadush:~$</span> cat side-projects/eyvro.md</p>
+          <div class="out md">
+            <h3 id="eyvro-h">EYVRO</h3>
+            <p class="muted">Computer vision · native Windows</p>
             <p>Webcam head tracking for driving and simulation games, feeding OpenTrack over UDP. A CPU-first pipeline with quick tuning, background operation and camera recovery, built as a local-first native Windows application.</p>
-            <div class="side-meta"><span><b>1.0</b> release candidate</span><span>local-first</span></div>
-          </article>
-          <article class="card side-card tilt">
-            <div class="side-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></div>
-            <div><span class="kind">Build system · graphics</span><h3>Halogen</h3></div>
+            <p class="meta">1.0 release candidate · local-first</p>
+          </div>
+        </article>
+
+        <article class="sub" id="halogen" aria-labelledby="halogen-h">
+          <p class="cmd"><span class="ps1" aria-hidden="true">meda@hadush:~$</span> cat side-projects/halogen.md</p>
+          <div class="out md">
+            <h3 id="halogen-h">Halogen</h3>
+            <p class="muted">Build system · graphics</p>
             <p>A declarative build system for graphics, lighting, weather, sky and seasons in a truck-simulation game: apply a preset to the game's definitions and get a small mod plus a diff, a report and a manifest of exactly what changed.</p>
-            <div class="side-meta"><span>declarative presets</span><span>in development</span></div>
-          </article>
+            <p class="meta">Declarative presets · in development</p>
+          </div>
+        </article>
+      </section>
+
+      <!-- Talks -->
+      <section class="block" id="talks" aria-labelledby="talks-h">
+        <h2 class="cmd" id="talks-h"><span class="ps1" aria-hidden="true">meda@hadush:~$</span> cat talks.txt</h2>
+        <ul class="out entries">
+          <li>
+            <strong>Keynote · Swiss Cyber AI Conference 2026</strong>
+            <span class="muted">Lugano, April 2026</span>
+            <q>Hacking LLM Applications: Attack Patterns, Defense Strategies, and Why AI Security Training Matters</q>
+          </li>
+          <li>
+            <strong>Guest instructor · Powercoders ICT Bootcamp</strong>
+            <span class="muted">Bern, ongoing</span>
+            LLM security and red-teaming sessions for career-changers entering tech.
+          </li>
+          <li>
+            <strong>National cybersecurity awareness programmes</strong>
+            <span class="muted">INSA, Ethiopia · 2018 – 2020</span>
+            Designed and delivered training for public-sector audiences.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Education -->
+      <section class="block" id="education" aria-labelledby="education-h">
+        <h2 class="cmd" id="education-h"><span class="ps1" aria-hidden="true">meda@hadush:~$</span> cat education.txt</h2>
+        <div class="out" id="credentials">
+          <ul class="entries">
+            <li><strong>BSc Software Engineering</strong><span class="muted">Microlink IT College · 2013 – 2017</span></li>
+            <li><strong>Cybersecurity Certification</strong><span class="muted">Ariel University · 2018</span></li>
+            <li><strong>Powercoders ICT Bootcamp</strong><span class="muted">Bern · alumnus 2023 · partner &amp; instructor</span></li>
+          </ul>
+          <p class="meta">Frameworks: OWASP LLM Top 10 · NIST CSF · MITRE ATT&amp;CK</p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ================= CREDENTIALS ================= -->
-    <section class="section" id="credentials">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="section-index">08 &nbsp;credentials</span>
-          <h2 class="section-title">Talks, education, <span class="grad">languages</span></h2>
+      <!-- Languages -->
+      <section class="block" id="languages" aria-labelledby="languages-h">
+        <h2 class="cmd" id="languages-h"><span class="ps1" aria-hidden="true">meda@hadush:~$</span> cat languages.txt</h2>
+        <dl class="out kv">
+          <div><dt>English</dt><dd>C1</dd></div>
+          <div><dt>Amharic</dt><dd>C1</dd></div>
+          <div><dt>Tigrinya</dt><dd>C1</dd></div>
+          <div><dt>French</dt><dd>B1 · improving</dd></div>
+        </dl>
+      </section>
+
+      <!-- Contact -->
+      <section class="block" id="contact" aria-labelledby="contact-h">
+        <h2 class="cmd" id="contact-h"><span class="ps1" aria-hidden="true">meda@hadush:~$</span> cat contact</h2>
+        <div class="out">
+          <p>AI security roles, LLM red-teaming, agent-system design, detection engineering or a talk for your team: I'm based in Lausanne and work with teams across Switzerland and beyond.</p>
+          <dl class="kv contact">
+            <div><dt>Email</dt><dd><a href="mailto:medhane.hadush@powercoders.org">medhane.hadush@powercoders.org</a></dd></div>
+            <div><dt>LinkedIn</dt><dd><a href="https://linkedin.com/in/medhane-hadush" rel="noopener">linkedin.com/in/medhane-hadush</a></dd></div>
+            <div><dt>GitHub</dt><dd><a href="https://github.com/MEdaHad" rel="noopener">github.com/MEdaHad</a></dd></div>
+            <div><dt>CV</dt><dd><a href="MedhaneHadush_CV.pdf">MedhaneHadush_CV.pdf</a></dd></div>
+          </dl>
+          <p class="links"><a href="mailto:medhane.hadush@powercoders.org">Email me</a> <a href="MedhaneHadush_CV.pdf">Download CV</a></p>
         </div>
-        <div class="creds-grid stagger reveal">
-          <div class="card cred-card">
-            <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3Z"/><path d="M19 12a7 7 0 0 1-14 0M12 19v3"/></svg>Speaking &amp; teaching</h3>
-            <div class="talk">
-              <b>Keynote · Swiss Cyber AI Conference 2026</b>
-              <span>Lugano, April 2026</span>
-              <q>Hacking LLM Applications: Attack Patterns, Defense Strategies, and Why AI Security Training Matters</q>
-            </div>
-            <div class="talk">
-              <b>Guest instructor · Powercoders ICT Bootcamp</b>
-              <span>Bern, ongoing</span>
-              <q>LLM security and red-teaming sessions for career-changers entering tech</q>
-            </div>
-            <div class="talk">
-              <b>National cybersecurity awareness programmes</b>
-              <span>INSA, Ethiopia · 2018 – 2020</span>
-              <q>Designed and delivered training for public-sector audiences</q>
-            </div>
-          </div>
-          <div class="card cred-card">
-            <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 9 10-5 10 5-10 5-10-5Z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>Education &amp; certifications</h3>
-            <ul class="edu-list">
-              <li><b>BSc Software Engineering</b><span>Microlink IT College · 2013 – 2017</span></li>
-              <li><b>Cybersecurity Certification</b><span>Ariel University · 2018</span></li>
-              <li><b>Powercoders ICT Bootcamp</b><span>Bern · alumnus 2023 · partner &amp; instructor</span></li>
-            </ul>
-            <div class="hero-meta"><span class="chip">OWASP LLM Top 10</span><span class="chip">NIST CSF</span><span class="chip">MITRE ATT&amp;CK</span></div>
-          </div>
-          <div class="card cred-card">
-            <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>Languages</h3>
-            <ul class="lang-list">
-              <li><div class="row"><span>English</span><span class="lvl">C1</span></div><div class="track"><div class="fill" style="--w:88%"></div></div></li>
-              <li><div class="row"><span>Amharic</span><span class="lvl">C1</span></div><div class="track"><div class="fill" style="--w:88%"></div></div></li>
-              <li><div class="row"><span>Tigrinya</span><span class="lvl">C1</span></div><div class="track"><div class="fill" style="--w:88%"></div></div></li>
-              <li><div class="row"><span>French</span><span class="lvl">B1 · improving</span></div><div class="track"><div class="fill" style="--w:55%"></div></div></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ================= CONTACT ================= -->
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="card contact-card reveal">
-          <div>
-            <span class="section-index">09 &nbsp;contact</span>
-            <h2 style="margin-top:.6rem">Let's build something that <span class="grad" style="background:linear-gradient(90deg,var(--cyan),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent">holds up</span>.</h2>
-            <p>AI security roles, LLM red-teaming, agent-system design, detection engineering or a talk for your team: I'm based in Lausanne and work with teams across Switzerland and beyond.</p>
-            <div class="hero-actions" style="margin-top:1.4rem">
-              <a class="btn btn-primary" href="mailto:medhane.hadush@powercoders.org">Email me</a>
-              <a class="btn btn-ghost" href="MedhaneHadush_CV.pdf" target="_blank" rel="noopener">Download CV</a>
-            </div>
-          </div>
-          <div class="contact-links">
-            <div class="contact-link" id="email-link">
-              <a class="ci-link" href="mailto:medhane.hadush@powercoders.org">
-                <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
-                <div><b>Email</b><span>medhane.hadush@powercoders.org</span></div>
-              </a>
-              <button class="copy" type="button" data-copy="medhane.hadush@powercoders.org" aria-label="Copy email address">copy</button>
-            </div>
-            <a class="contact-link" href="https://linkedin.com/in/medhane-hadush" target="_blank" rel="noopener">
-              <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></span>
-              <div><b>LinkedIn</b><span>linkedin.com/in/medhane-hadush</span></div>
-            </a>
-            <a class="contact-link" href="https://github.com/MEdaHad" target="_blank" rel="noopener">
-              <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3.1-.4 6.4-1.6 6.4-7A5.4 5.4 0 0 0 20 4.8 5 5 0 0 0 19.9 1s-1.2-.4-3.9 1.5a13.4 13.4 0 0 0-7 0C6.3.6 5.1 1 5.1 1a5 5 0 0 0-.1 3.8 5.4 5.4 0 0 0-1.5 3.7c0 5.4 3.3 6.6 6.4 7A3.4 3.4 0 0 0 9 18.1V22"/></svg></span>
-              <div><b>GitHub</b><span>github.com/MEdaHad</span></div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+      <p class="cmd prompt-end" aria-hidden="true"><span class="ps1">meda@hadush:~$</span> <span class="cursor"></span></p>
+    </main>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div>© <span id="year">2026</span> Medhane Hadush · Lausanne, Switzerland</div>
-      <div class="footer-links">
-        <a href="https://github.com/MEdaHad/medahad.github.io" target="_blank" rel="noopener">view source</a>
-        <a href="MedhaneHadush_CV.pdf" target="_blank" rel="noopener">CV (PDF)</a>
-        <a href="#top">back to top ↑</a>
-      </div>
-      <div class="mono">vanilla html · css · js — no trackers, no cookies</div>
-    </div>
-  </footer>
-
-  <button class="fab" id="fab" aria-label="Open the terminal"><span class="led"></span><span class="txt">$ open terminal</span><span class="kbd">/</span></button>
-  <canvas id="matrix-canvas" aria-hidden="true"></canvas>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <div class="scanlines" aria-hidden="true"></div>
-  <div class="bg-noise" aria-hidden="true"></div>
-
-  <script src="assets/js/main.js?v=2026.09.1" defer></script>
-  <script src="assets/js/terminal.js?v=2026.09.1" defer></script>
-  <script src="assets/js/constellation.js?v=2026.09.1" defer></script>
+    <footer class="foot">
+      <p>© 2026 Medhane Hadush · Lausanne, Switzerland</p>
+      <p><a href="https://github.com/MEdaHad/medahad.github.io" rel="noopener">Source</a> · <a href="#main">Back to top</a></p>
+    </footer>
+  </div>
 </body>
 </html>
