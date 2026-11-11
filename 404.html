@@ -6,45 +6,46 @@
   <title>Page not found · Medhane Hadush</title>
   <meta name="description" content="This page does not exist. Go back to Medhane Hadush's portfolio.">
   <meta name="robots" content="noindex">
-  <meta name="theme-color" content="#fbfbfa" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#111417" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0c0f0d">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-  <script>try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}</script>
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <div class="container">
-      <a class="brand" href="/">medhane<span>@</span>hadush</a>
-      <nav class="site-nav" aria-label="Primary">
-        <ul>
-          <li><a href="/#about">About</a></li>
-          <li><a href="/#experience">Experience</a></li>
-          <li><a href="/#projects">Projects</a></li>
-          <li><a href="/#contact">Contact</a></li>
+  <div class="term">
+    <header class="bar">
+      <p>meda@hadush: ~</p>
+    </header>
+
+    <main id="main">
+      <section class="block" aria-labelledby="title">
+        <p class="cmd"><span class="ps1" aria-hidden="true">meda@hadush:~$</span> cd requested-page</p>
+        <div class="out">
+          <h1 id="title">404: page not found</h1>
+          <p>bash: cd: No such file or directory. The page you were looking for doesn't exist or has moved.</p>
+        </div>
+      </section>
+
+      <nav class="block" aria-label="Where to go">
+        <p class="cmd"><span class="ps1" aria-hidden="true">meda@hadush:~$</span> ls ~</p>
+        <ul class="ls out">
+          <li><a href="/">Back to the portfolio</a></li>
+          <li><a href="/#about">about.txt</a></li>
+          <li><a href="/#experience">experience.md</a></li>
+          <li><a href="/#projects">projects/</a></li>
+          <li><a href="/#contact">contact</a></li>
+          <li><a href="/MedhaneHadush_CV.pdf">MedhaneHadush_CV.pdf</a></li>
         </ul>
       </nav>
-    </div>
-  </header>
 
-  <main id="main" class="not-found">
-    <div class="container prose">
-      <p class="eyebrow">Error 404</p>
-      <h1>Page not found</h1>
-      <p class="lead">The page you were looking for doesn't exist or has moved.</p>
-      <div class="actions">
-        <a class="btn btn-primary" href="/">Back to the portfolio</a>
-        <a class="btn btn-secondary" href="/MedhaneHadush_CV.pdf">Download CV (PDF)</a>
-      </div>
-    </div>
-  </main>
+      <p class="cmd prompt-end" aria-hidden="true"><span class="ps1">meda@hadush:~$</span> <span class="cursor"></span></p>
+    </main>
 
-  <footer class="site-footer">
-    <div class="container">
+    <footer class="foot">
       <p>© 2026 Medhane Hadush · Lausanne, Switzerland</p>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </body>
 </html>
