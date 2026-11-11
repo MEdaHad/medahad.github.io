@@ -7,45 +7,36 @@
   <meta name="description" content="This page does not exist. Go back to Medhane Hadush's portfolio.">
   <meta name="robots" content="noindex">
   <meta name="color-scheme" content="dark">
-  <meta name="theme-color" content="#0c0f0d">
+  <meta name="theme-color" content="#0b0e1c">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <div class="term">
-    <header class="bar">
-      <p>meda@hadush: ~</p>
-    </header>
-
-    <main id="main">
-      <section class="block" aria-labelledby="title">
-        <p class="cmd"><span class="ps1" aria-hidden="true">meda@hadush:~$</span> cd requested-page</p>
-        <div class="out">
-          <h1 id="title">404: page not found</h1>
-          <p>bash: cd: No such file or directory. The page you were looking for doesn't exist or has moved.</p>
+  <main class="lost" id="main">
+    <section class="static-window" aria-labelledby="title">
+      <div class="titlebar">
+        <div class="lights" aria-hidden="true">
+          <span class="light l-close"></span>
+          <span class="light l-min"></span>
+          <span class="light l-max"></span>
         </div>
-      </section>
-
-      <nav class="block" aria-label="Where to go">
-        <p class="cmd"><span class="ps1" aria-hidden="true">meda@hadush:~$</span> ls ~</p>
-        <ul class="ls out">
-          <li><a href="/">Back to the portfolio</a></li>
-          <li><a href="/#about">about.txt</a></li>
-          <li><a href="/#experience">experience.md</a></li>
-          <li><a href="/#projects">projects/</a></li>
-          <li><a href="/#contact">contact</a></li>
-          <li><a href="/MedhaneHadush_CV.pdf">MedhaneHadush_CV.pdf</a></li>
+        <p class="win-title">meda@hadush: ~</p>
+      </div>
+      <div class="static-body">
+        <p><span class="t-ps1"><span class="t-user">meda@hadush</span>:<span class="t-path">~</span>$</span> cd requested-page</p>
+        <p class="t-err">bash: cd: requested-page: No such file or directory</p>
+        <h1 id="title">404 · Page not found</h1>
+        <p class="t-muted">The page you were looking for doesn't exist or has moved.</p>
+        <ul class="static-links">
+          <li><a class="primary" href="/">Back to the desktop</a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#experience">Experience</a></li>
+          <li><a href="/#projects">Projects</a></li>
+          <li><a href="/#contact">Contact</a></li>
+          <li><a href="/MedhaneHadush_CV.pdf">CV (PDF)</a></li>
         </ul>
-      </nav>
-
-      <p class="cmd prompt-end" aria-hidden="true"><span class="ps1">meda@hadush:~$</span> <span class="cursor"></span></p>
-    </main>
-
-    <footer class="foot">
-      <p>© 2026 Medhane Hadush · Lausanne, Switzerland</p>
-    </footer>
-  </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
