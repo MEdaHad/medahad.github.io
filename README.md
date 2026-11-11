@@ -6,7 +6,7 @@ Live: https://medahad.github.io/
 
 ## Design
 
-A single page that reads like a Linux terminal session: every section is a shell command (`whoami`, `cat about.txt`, `cat skills.md`, `ls projects/`, `cat contact`, …) followed by its output. Dark background, monospace system fonts, one green accent for prompts, links and emphasis. The only motion is the blinking cursor on the last prompt, and it stops when the visitor prefers reduced motion.
+A single page that reads like a Linux terminal session: every section is a shell command (`whoami`, `cat highlights.txt`, `cat about.txt`, `cat skills.md`, `ls projects/`, `cat contact`, …) followed by its output. Dark background, monospace system fonts, one green accent for prompts, links and emphasis. The only motion is the blinking cursor on the last prompt, and it stops when the visitor prefers reduced motion.
 
 ## Stack
 

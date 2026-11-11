@@ -188,7 +188,7 @@ h1 { font-size: 1.25em; color: var(--accent); }
 }
 
 /* Comfortable tap targets on phones (WCAG 2.2 / Lighthouse 24px) */
-.ls a, .links a, .kv.contact a, .meta a, .foot a {
+.ls a, .links a, .list a, .kv.contact a, .meta a, .foot a {
   display: inline-block;
   padding: 0.3em 0;
   min-height: 24px;
