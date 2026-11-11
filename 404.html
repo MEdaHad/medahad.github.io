@@ -1,33 +1,50 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 — route not found · Medhane Hadush</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found · Medhane Hadush</title>
+  <meta name="description" content="This page does not exist. Go back to Medhane Hadush's portfolio.">
   <meta name="robots" content="noindex">
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #05070d; color: #d5e2f0; font-family: 'JetBrains Mono', ui-monospace, monospace; }
-    .box { width: min(640px, calc(100% - 2rem)); border: 1px solid rgba(148,163,184,.3); border-radius: 16px; background: #070a12; box-shadow: 0 0 80px rgba(34,211,238,.1); overflow: hidden; }
-    .bar { padding: .6rem 1rem; background: rgba(255,255,255,.04); border-bottom: 1px solid rgba(255,255,255,.08); font-size: .75rem; color: #8ea0b8; display: flex; gap: 6px; align-items: center; }
-    .bar i { width: 11px; height: 11px; border-radius: 50%; display: inline-block; }
-    .body { padding: 1.2rem 1.4rem; font-size: .9rem; line-height: 1.7; }
-    .g { color: #34d399; } .c { color: #22d3ee; } .r { color: #fb7185; } .m { color: #7f8fa6; }
-    a { color: #22d3ee; }
-  </style>
+  <meta name="theme-color" content="#fbfbfa" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111417" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <script>try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}</script>
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-  <div class="box">
-    <div class="bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span style="margin-left:.6rem">medhane@hadush: ~ — zsh</span></div>
-    <div class="body">
-      <div><span class="g">medhane@hadush</span> <span class="c">~</span> $ curl -I <span id="path">/this-page</span></div>
-      <div class="r">HTTP/2 404 · route not found</div>
-      <div class="m">// no injection detected, just a missing page.</div>
-      <br>
-      <div><span class="g">medhane@hadush</span> <span class="c">~</span> $ cd <a href="/">~</a></div>
-      <div class="m">→ <a href="/">back to the portfolio</a> · <a href="/#terminal">open the terminal</a></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/">medhane<span>@</span>hadush</a>
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#experience">Experience</a></li>
+          <li><a href="/#projects">Projects</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
-  <script>try { document.getElementById('path').textContent = location.pathname; } catch (e) {}</script>
+  </header>
+
+  <main id="main" class="not-found">
+    <div class="container prose">
+      <p class="eyebrow">Error 404</p>
+      <h1>Page not found</h1>
+      <p class="lead">The page you were looking for doesn't exist or has moved.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="/">Back to the portfolio</a>
+        <a class="btn btn-secondary" href="/MedhaneHadush_CV.pdf">Download CV (PDF)</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Medhane Hadush · Lausanne, Switzerland</p>
+    </div>
+  </footer>
 </body>
 </html>
